@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanPia</title>
+    <link rel="stylesheet" href="./css/mobile-1.4.5.min.css" />
+    <script src="./js/jquery-1.11.1.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=gd4f25tv4c;submodules=geocoder"></script>
+    <script src="./js/jquery-3.7.1.min.js" integrity="PnUB0Vw2MOeRyLIDkuud7jGp9lzj793nbO9ccQFBqyQ="crossorigin="anonymous"></script>
+    <!-- <script src="./js/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./css/style_map.css" />
+	<link rel="stylesheet" href="./css/ui_delete.css" />
+	<script src="./js/tab.js"></script>
+   
+</head>
+
+
+
+<body>
+<div data-role="page" id="my_map" >
+    <!-- "header" 메인 헤더(상단 바)-->
+	<div  data-role="header" data-position="fixed" style="background-color:none; height:55px;"> 
+		<a href="www.hschool.co.kr/test_twenty_five/02/project05/index.html" data-ajax="false"  style="background:none; box-shadow:none;"><img src="img/icon/arrow_b.png"   style="margin-top: 8px;"/></a>
+		<h1>지도</h1>
+        <a href="#" style="background:none; box-shadow:none;margin-right:50px; margin-top: 5px;" class="ui-btn-right"><img src="img/icon/alert.png" alt="alert"/></a>
+			<a href="#" style="background:none; box-shadow:none;" class="ui-btn-right"><img src="img/icon/ticket.png" style="
+    margin-top: 5px; alt="ticket"  /></a>
+        <div class="fiexd">
+            <div class="map_search_box"></div>
+            <input type="text" class="map_search" placeholder="검색어를 입력해주세요" />
+            <img class="map_search_icon" src="img/icon/search.png" />
+            <div class="map_meun">
+                <div class="map_meun01 map_on"><div class="map_meun_title01 map_on">전체</div></div>
+                <div class="map_meun02"><div class="map_meun_title02">입구</div></div>
+                <div class="map_meun03"><div class="map_meun_title03">화장실</div></div>
+                <div class="map_meun04"><div class="map_meun_title04">편의점</div></div>
+                <div class="map_meun05"><div class="map_meun_title05">MD부스</div></div>
+                <div class="map_meun06"><div class="map_meun_title06">대기장소</div></div>
+            </div>
+        </div>
+	</div> 
+	<!-- "header" 메인 헤더(상단 바)end -->
+    <div  data-role="content"  style="background-color:#fff ;"> <!-- "content"(중간)-->
+        <div class="map_wrap">
+            <div class="map_wrap_box">
+                <div id="map" style="width:100%; height:1000px; "></div>
+
+                    <script>
+                        $(document).ready(async  function(){
+                            let XY = await getLocation();
+                            XY.lat = 37.516852;
+                            XY.lng = 127.075795;
+                        
+                            // 지도를 삽입할 HTML 요소 또는 html 요소의 id 값을 지정한다
+                            var mapDiv = document.getElementById('map');
+                            // 옵션 없이 지도 객체를 생성하면 서울 시청을 중심으로 하는 16레벨 정도의 지도가 생성된다
+                        
+                        
+                            var mapOptions = {
+                                center : new naver.maps.LatLng(XY.lat, XY.lng),
+                                zoom: 18
+                            
+                            };
+                            var map = new naver.maps.Map(mapDiv,mapOptions);
+                        
+                        
+                        
+                        //jQuery를 사용하여 /pharmach_list로 접속한다.
+                        // ajax()의 파라미터가 여러개 이므로 중괄호 사용
+                        
+                        
+                        
+                        await naver.maps.Service.reverseGeocode({
+                            //여기서 변환된 주소는 reverseGeocode()의 두번째 파라미터(function)로 받는다.
+                            location: new naver.maps.LatLng(XY.lat, XY.lng)
+                        }, function(status, response){
+                            let result = response.result;
+                            // result 하위 항목에서 주소를 꺼내기 위해서...
+                            let items = result.items;
+                            //console.log(items[0].addrdetail.sido); //시도
+                            //console.log(items[0].addrdetail.sigugun); //시구군
+                            // 배열을 공백을 기준으로 분리해서 저장
+                            let sido_arr = items[0].addrdetail.sido.split(" ");
+                            let gubun_arr = items[0].addrdetail.sigugun.split(" ");
+                        
+                            let sido = "";
+                            let gubun = "";
+                            if(sido_arr.length == 1){
+                                sido = sido_arr[0];
+                                gugun = gubun_arr[0];
+                            } else if(sido_arr.length > 1) {
+                                sido = sido_arr[0];
+                                gugun = sido_arr[1];
+                            }
+                            console.log(sido);
+                            console.log(gugun);
+                        
+                            $.ajax({
+                                url: "map_data.xml",
+                                    type: "GET",
+                                    cache: false,
+                                    dataType: "xml",
+                                    data: {"Q0" : sido, "Q1" : gugun, "QT" : "", "QN" : "", "ORD" : "", "pageNo" : "1", "numOfRows" : "500"},
+                                    success: function(data) {
+                                    let items = $(data).find("item");  // XML에서 item 태그 찾기
+                                    if (items.length === 0) {
+                                        console.error("XML에서 <item> 태그를 찾을 수 없음");
+                                        return;
+                                    }
+                                
+                                items.each(function(index, element) {
+                                    let it = $(element); // XML 요소를 jQuery 객체로 변환
+                                    let dutyName = it.find("dutyName").text();
+                                    let dutyAddr = it.find("dutyAddr").text();
+                                    let dutyTel1 = it.find("dutyTel1").text();
+                                    let dutyFax = it.find("dutyFax").text();
+                                    let dutyTime1c = it.find("dutyTime1c").text();
+                                    let dutyTime1s = it.find("dutyTime1s").text();
+                                    let lat = parseFloat(it.find("wgs84Lat").text());
+                                    let lon = parseFloat(it.find("wgs84Lon").text());
+                                
+                                
+                                    if (!lat || !lon) {
+                                        console.warn(`위치 정보가 없는 항목: ${dutyName}`);
+                                        return;
+                                    }
+                                
+                                    let cityhall = new naver.maps.LatLng(lat, lon);
+                                    let marker = new naver.maps.Marker({
+                                        map: map,
+                                        position: cityhall
+                                    });
+                                
+                                    let contentString = `
+                                        <div class="iw_inner" style="padding: 0px 15px;">
+                                            <h3>${dutyName}</h3> 
+                                            <button onclick="window.open('https://map.kakao.com/link/to/${dutyName},${lat},${lon}');">카카오맵 연동</button><br />
+                                            <p>운영 시간 : ${dutyTime1s}~${dutyTime1c}</p> 
+                                            <p>운영 장소 : ${dutyAddr} </p>
+                                            <p>혼잡도 : ${dutyFax}</p>
+                                        </div>
+                                    `;
+                                    
+                                    let infowindow = new naver.maps.InfoWindow({
+                                        content: contentString,
+                                        maxWidth: 440,
+                                        backgroundColor: "#eee",
+                                        borderColor: "#666",
+                                        borderWidth: 3
+                                    });
+                                
+                                    naver.maps.Event.addListener(marker, "click", function() {
+                                        if (infowindow.getMap()) {
+                                            infowindow.close();
+                                        } else {
+                                            infowindow.open(map, marker);
+                                        }
+                                    });
+                                });
+                                },
+                                error: function(request, status, error){
+                                    console.error("Ajax Call Error: ", status, error);
+                                    }
+                            }); //$.ajax end
+                        });
+                    });
+                
+                
+                        async function getLocation() {
+                        //2개의 좌표를 반환해야 하기 때문에 object 형으로 반환 변수를 미리 선언
+                            let XY = new Object();    
+                        // navigator.geolocation 객체가 위치 정보를 가져오는 옮, 즉 위치 정보가 있으면 if문 실행
+                            if(navigator.geolocation) { 
+                                let promise = new Promise((resolve,rejected)=>{
+                                    navigator.geolocation.getCurrentPosition((position)=>{
+                                        resolve(position);
+                                    });
+                                });
+                                let position = await promise;
+                            
+                                XY.lat = position.coords.latitude;
+                                XY.lng = position.coords.longitude;
+                            
+                                return XY;
+                            
+                            } else {
+                                console.error("Geolocation is not supported by this browser.")
+                                return{lat:0, lan:0};
+                            };
+                        
+                        };
+                    </script>
+
+            </div>
+        </div>
+    </div><!-- "content"(중간)끝-->
+
+   
+    <div  data-role="footer"  data-position="fixed" style="height: 55px; border-radius: 20px 20px 0px 0px;overflow: hidden; box-shadow:0px -4px 20px rgba(0,0,0,0.1); "> <!-- "footer" 메인 푸터(하단 바)-->
+        <div data-role="navbar" >
+            <ul>
+                <li><a href="http://www.hschool.co.kr/test_twenty_five/02/project05/index.html#main_page" data-ajax="false" ><img src="img/icon/home.png" /></a> </li>
+                <li><a href="#" ><img src="img/icon/location_on.png" /></a> </li>
+                <li><a href="http://www.hschool.co.kr/test_twenty_five/02/project05/index.html#fna_zone" data-ajax="false" ><img src="img/icon/speech_bubble.png" /></a> </li>
+                <li><a href="http://www.hschool.co.kr/test_twenty_five/02/project05/index.html#my_page" data-ajax="false" ><img src="img/icon/my.png" /></a> </li>
+            </ul>
+        </div>
+    </div><!-- "footer" 메인 푸터(하단 바)end-->
+</div>
+</body>
+</html>

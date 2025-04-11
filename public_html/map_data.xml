@@ -1,0 +1,405 @@
+<response>
+<header>
+<resultCode>00</resultCode>
+<resultMsg>NORMAL SERVICE.</resultMsg>
+</header>
+<body>
+<items>
+
+<item>
+<dutyAddr>A -01 구역 </dutyAddr>
+<dutyFax>매우 혼잡(대기 40분 예상)</dutyFax>
+<dutyName> MD 부스(A)</dutyName>
+<dutyTel1>001</dutyTel1>
+<dutyTime1c>17:30(공연 시작 30분전)</dutyTime1c>
+<dutyTime1s>11:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.516900</wgs84Lat>
+<wgs84Lon>127.076190</wgs84Lon>
+</item>
+<item>
+<dutyAddr>B -01 구역 </dutyAddr>
+<dutyFax>여유(대기 없음)</dutyFax>
+<dutyName> MD 부스(B)</dutyName>
+<dutyTel1>002</dutyTel1>
+<dutyTime1c>17:30(공연 시작 30분전)</dutyTime1c>
+<dutyTime1s>11:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.516809</wgs84Lat>
+<wgs84Lon>127.076338</wgs84Lon>
+</item>
+<item>
+<dutyAddr>C -01 구역 </dutyAddr>
+<dutyFax>보통(대기 10분 예상)</dutyFax>
+<dutyName> MD 부스(C)</dutyName>
+<dutyTel1>003</dutyTel1>
+<dutyTime1c>17:30(공연 시작 30분전)</dutyTime1c>
+<dutyTime1s>11:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.516704</wgs84Lat>
+<wgs84Lon>127.076486</wgs84Lon>
+</item>
+<item>
+<dutyAddr>D -01 구역 </dutyAddr>
+<dutyFax>보통(대기 5분 예상)</dutyFax>
+<dutyName> MD 부스(D)</dutyName>
+<dutyTel1>004</dutyTel1>
+<dutyTime1c>17:30(공연 시작 30분전)</dutyTime1c>
+<dutyTime1s>11:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.516596</wgs84Lat>
+<wgs84Lon>127.076668</wgs84Lon>
+</item>
+<item>
+<dutyAddr>X-game 뒷편 </dutyAddr>
+<dutyFax> 여유(잔여 좌석 : 50석 이상)</dutyFax>
+<dutyName>(A)입장 대기 구역</dutyName>
+<dutyTel1>005</dutyTel1>
+<dutyTime1c>18:00(공연 시작전 까지)</dutyTime1c>
+<dutyTime1s>10:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.516767</wgs84Lat>
+<wgs84Lon>127.074938</wgs84Lon>
+</item>
+<item>
+<dutyAddr>X-game 뒷편</dutyAddr>
+<dutyFax> 혼잡(잔여 좌석 : 5석 이하)</dutyFax>
+<dutyName>(B)입장 대기 구역</dutyName>
+<dutyTel1>006</dutyTel1>
+<dutyTime1c>18:00(공연 시작전 까지)</dutyTime1c>
+<dutyTime1s>10:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.516575</wgs84Lat>
+<wgs84Lon>127.074970</wgs84Lon>
+</item>
+<item>
+<dutyAddr>X-game 뒷편</dutyAddr>
+<dutyFax> 보통(잔여 좌석 : 10석 이상)</dutyFax>
+<dutyName>(C)입장 대기 구역</dutyName>
+<dutyTel1>007</dutyTel1>
+<dutyTime1c>18:00(공연 시작전 까지)</dutyTime1c>
+<dutyTime1s>10:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.516337</wgs84Lat>
+<wgs84Lon>127.075013</wgs84Lon>
+</item>
+
+<item>
+<dutyAddr>하키장 뒷편</dutyAddr>
+<dutyFax> 보통(대기 5분 예상)</dutyFax>
+<dutyName>(A)이벤트 부스</dutyName>
+<dutyTel1>008</dutyTel1>
+<dutyTime1c>17:00(공연 시작 1시간 전까지)</dutyTime1c>
+<dutyTime1s>13:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515980</wgs84Lat>
+<wgs84Lon>127.074846</wgs84Lon>
+</item>
+<item>
+<dutyAddr>하키장 뒷편</dutyAddr>
+<dutyFax> 여유(대기 없음)</dutyFax>
+<dutyName>(B)이벤트 부스</dutyName>
+<dutyTel1>009</dutyTel1>
+<dutyTime1c>17:00(공연 시작 1시간 전까지)</dutyTime1c>
+<dutyTime1s>13:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515856</wgs84Lat>
+<wgs84Lon>127.074884</wgs84Lon>
+</item>
+
+<item>
+<dutyAddr>주차장 옆</dutyAddr>
+<dutyFax> 여유(대기 없음)</dutyFax>
+<dutyName>(A)외부 화장실</dutyName>
+<dutyTel1>011</dutyTel1>
+<dutyTime1c>07:00</dutyTime1c>
+<dutyTime1s>23:00(야간 패쇠)</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515608</wgs84Lat>
+<wgs84Lon>127.075117</wgs84Lon>
+</item>
+<item>
+<dutyAddr>주차장 옆</dutyAddr>
+<dutyFax> 보통(대기 10분 예상)</dutyFax>
+<dutyName>(B)외부 화장실</dutyName>
+<dutyTel1>012</dutyTel1>
+<dutyTime1c>07:00</dutyTime1c>
+<dutyTime1s>23:00(야간 패쇠)</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515543</wgs84Lat>
+<wgs84Lon>127.075208</wgs84Lon>
+</item>
+
+<item>
+<dutyAddr>GATE - A</dutyAddr>
+<dutyFax> 보통(대기 10분 예상)</dutyFax>
+<dutyName>(A)플로어(2F) 좌석 입장</dutyName>
+<dutyTel1>013</dutyTel1>
+<dutyTime1c>18:40(공연시작 40분 후 입장 마감)</dutyTime1c>
+<dutyTime1s>16:30(공연시작 1시간 30분 전 입장 시작)</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515933</wgs84Lat>
+<wgs84Lon>127.076537</wgs84Lon>
+</item>
+<item>
+<dutyAddr>GATE - B</dutyAddr>
+<dutyFax> 혼잡(대기 30분 예상)</dutyFax>
+<dutyName>(B)플로어(3F) 좌석 입장</dutyName>
+<dutyTel1>014</dutyTel1>
+<dutyTime1c>18:40(공연시작 40분 후 입장 마감)</dutyTime1c>
+<dutyTime1s>16:30(공연시작 1시간 30분 전 입장 시작)</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515800</wgs84Lat>
+<wgs84Lon>127.076419</wgs84Lon>
+</item>
+<item>
+<dutyAddr>GATE - C</dutyAddr>
+<dutyFax> 보통(대기 10분 예상)</dutyFax>
+<dutyName>(C)스탠딩 좌석 입장</dutyName>
+<dutyTel1>015</dutyTel1>
+<dutyTime1c>18:30(공연시작 30분 후 입장 마감)</dutyTime1c>
+<dutyTime1s>16:00(공연시작 2시간 전 입장 시작)</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515722</wgs84Lat>
+<wgs84Lon>127.076309</wgs84Lon>
+</item>
+
+
+<item>
+<dutyAddr>주자창 앞쪽</dutyAddr>
+<dutyFax> 보통(대기 10분 예상)</dutyFax>
+<dutyName>(A)편의점</dutyName>
+<dutyTel1>016</dutyTel1>
+<dutyTime1c>23:00</dutyTime1c>
+<dutyTime1s>10:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515476</wgs84Lat>
+<wgs84Lon>127.076032</wgs84Lon>
+</item>
+<item>
+<dutyAddr>주자창 앞쪽</dutyAddr>
+<dutyFax> 보통(대기 10분 예상)</dutyFax>
+<dutyName>(B)편의점</dutyName>
+<dutyTel1>016</dutyTel1>
+<dutyTime1c>23:00</dutyTime1c>
+<dutyTime1s>10:00</dutyTime1s>
+<dutyTime2c>1830</dutyTime2c>
+<dutyTime2s>0900</dutyTime2s>
+<dutyTime3c>1830</dutyTime3c>
+<dutyTime3s>0900</dutyTime3s>
+<dutyTime4c>1830</dutyTime4c>
+<dutyTime4s>0900</dutyTime4s>
+<dutyTime5c>1830</dutyTime5c>
+<dutyTime5s>0900</dutyTime5s>
+<dutyTime6c>1300</dutyTime6c>
+<dutyTime6s>0900</dutyTime6s>
+<hpid>C1109782</hpid>
+<postCdn1>063</postCdn1>
+<postCdn2>55 </postCdn2>
+<rnum>4</rnum>
+<wgs84Lat>37.515506</wgs84Lat>
+<wgs84Lon>127.076231</wgs84Lon>
+</item>
+
+
+</items>
+<numOfRows>10</numOfRows>
+<pageNo>1</pageNo>
+<totalCount>24940</totalCount>
+</body>
+</response>
