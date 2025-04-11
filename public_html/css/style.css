@@ -1,1 +1,3496 @@
-/* body{background-color: aqua;} */
+
+/* 스플래쉬 CSS */
+#splash_all{height:100vh;}
+#splash{position: absolute; background: #5E26B8; width: 100%; height: 100vh;}
+#splash img{position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; width:60px;} 
+#splash2{position: absolute; background: #ffffff; width: 100%; height: 100vh;}
+#splash2 img{position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; width:60px;} 
+/* 언어설정 페이지 */
+#language-box {background: #ffffff; width: 100%; height: 100%; position: fixed; top: 0; left: 0; /* 기본적으로 숨김 */}
+#language-box .logo_move {width:60px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); animation: moveUp 1s ease-in-out forwards; /* 위로 이동 애니메이션 */}
+@keyframes moveUp { 0% { transform: translate(-50%, -50%);} 100% { transform: translate(-50%, -300px); /* 위로 이동 */}}
+#language { position: absolute; top: 50%; /* 언어 설정 박스의 위치 */ left: 50%; transform: translate(-50%, -50%); text-align: center; opacity: 0; /* 처음엔 숨김 */ transition: opacity 1s ease-in-out; /* 천천히 나타남 */}
+
+
+.box {width: 343px; height: 51px;}
+.box .group {position: fixed; width: 345px; height: 51px; top: 0; left: 0;}
+.box .overlap-group {position: relative; width: 343px; height: 51px; background-image: url(./img/rectangle-47.png); background-size: 100% 100%;}
+.box .img {position: absolute; width: 143px; height: 16px; top: 19px; left: 99px;}
+.box .group-2 {position: absolute; width: 20px; height: 20px; top: 16px; left: 306px;}
+.box .language {position: absolute; width: 35px; height: 35px; top: 8px; left: 10px;}
+
+/* .lang{position: absolute; */
+    /* z-index: 2; */
+    /* top: 318px; */
+    /* left: 27px;} */
+
+.lang_btn{width:343px; height:51px; background:#9D9D9D; border-radius: 50px; margin: 0 auto; position:relative; bottom:-90%;}
+.lang_btn_text{position: absolute; color: #ffffff; text-align: center; width: 343px; font-weight: 500; letter-spacing:1px;}
+  
+/* 스플래쉬 CSS end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 온보딩 CSS */
+.onboarding_wrap {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.onboarding_wrap .onboarding_box {
+  background-color: #ffffff;
+  width: 375px;
+  height: 667px;
+  position: relative;
+  
+}
+
+.header_text{position:relative; top:0;}
+.on_body{float:left;}
+
+.onboarding_wrap .onboarding_img {
+  position: absolute;
+  width: 375px;
+  height: 288px;
+  top: 250px;
+  left: 0;
+  object-fit: cover;
+}
+
+
+
+.onboarding_next_btn {
+  position: absolute;
+  width: 343px;
+    height: 51px;
+  line-height: 51px;
+  bottom:20px;
+  left:50%;
+  margin-left:-172px;
+  background-color: #5e26b8;
+  border-radius: 25.5px;
+}
+
+.onboarding_end_btn {
+  position: absolute;
+  width: 343px;
+    height: 51px;
+  line-height: 51px;
+  bottom:20px;
+  left:50%;
+  margin-left:-172px;
+  background-color: #9D9D9D;
+  border-radius: 25.5px;
+}
+
+.onboarding_next_btn_text {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 343px;
+  height: 100%;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #ffffffee;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+ .onboarding_logo {
+  position: absolute;
+  
+  top: 40px;
+  left: 168px;
+}
+
+.onboarding_logo_img {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  
+	height: 56px;
+}
+
+.onboarding_ment {
+  width:375px;
+  text-align:center;
+  top: 165px;
+  
+  margin-left:0;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.onboarding_skip {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-weight: 400;
+  color: #edb440;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.onboarding_wrap .onboarding_more {
+  position: absolute;
+  width: 62px;
+  height: 8px;
+  top: 560px;
+  left: 156px;
+}
+
+
+
+.onboarding_wrap .circle1 {
+  left: 0;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding_wrap .circle2 {
+  left: 18px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding_wrap .circle3 {
+  left: 36px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding_wrap .circle4 {
+  left: 54px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+.onboarding_wrap .c_on{background-color: #EDB440;}
+
+
+
+.onboarding2_wrap {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.onboarding2_wrap .onboarding2_box {
+  background-color: #ffffff;
+  width: 375px;
+  height: 667px;
+  position: relative;
+}
+
+.onboarding2_wrap .onboarding2_img {
+  position: absolute;
+  width: 375px;
+  height: 288px;
+  top: 211px;
+  left: 0;
+  object-fit: cover;
+}
+
+.onboarding2_wrap .onboarding2_next_btn {
+  position: absolute;
+  width: 343px;
+  height: 51px;
+  bottom:20px;
+  left:50%;
+  margin-left:-172px;
+  background-color: #5e26b8;
+  border-radius: 25.5px;
+}
+
+.onboarding2_wrap .onboarding2_next_btn_text {
+  top: 10px;
+  left: 142px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #ffffffee;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.onboarding2_wrap .onboarding2_logo {
+  position: absolute;
+  width: 40px;
+  height: 56px;
+  top: 40px;
+  left: 168px;
+}
+
+.onboarding2_wrap .onboarding2_logo_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.onboarding2_wrap .onboarding2_ment {
+  top: 145px;
+  left: 63px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.onboarding2_wrap .onboarding2_skip {
+  position: absolute;
+  top: 15px;
+  left: 304px;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-weight: 400;
+  color: #edb440;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.onboarding2_wrap .onboarding2_more {
+  position: absolute;
+  width: 62px;
+  height: 8px;
+  top: 538px;
+  left: 156px;
+}
+
+.onboarding2_wrap .circle1 {
+  left: 0;
+  background-color: #edb440;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding2_wrap .circle2 {
+  left: 18px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding2_wrap .circle3 {
+  left: 36px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding2_wrap .circle4 {
+  left: 54px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding3_wrap {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.onboarding3_wrap .onboarding3_box {
+  background-color: #ffffff;
+  width: 375px;
+  height: 667px;
+  position: relative;
+}
+
+.onboarding3_wrap .onboarding3_img {
+  position: absolute;
+  width: 375px;
+  height: 288px;
+  top: 211px;
+  left: 0;
+  object-fit: cover;
+}
+
+.onboarding3_wrap .onboarding3_next_btn {
+  position: absolute;
+  width: 343px;
+  height: 51px;
+  bottom:20px;
+  left:50%;
+  margin-left:-172px;
+  background-color: #5e26b8;
+  border-radius: 25.5px;
+}
+
+.onboarding3_wrap .onboarding3_next_btn_text {
+  top: 10px;
+  left: 142px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #ffffffee;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.onboarding3_wrap .onboarding3_logo {
+  position: absolute;
+  width: 40px;
+  height: 56px;
+  top: 40px;
+  left: 168px;
+}
+
+.onboarding3_wrap .onboarding3_logo_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.onboarding3_wrap .onboarding3_ment {
+  top: 145px;
+  left: -15px;
+  width: 400px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.onboarding3_wrap .onboarding3_skip {
+  position: absolute;
+  top: 15px;
+  left: 304px;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-weight: 400;
+  color: #edb440;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.onboarding3_wrap .onboarding3_more {
+  position: absolute;
+  width: 62px;
+  height: 8px;
+  top: 538px;
+  left: 156px;
+}
+
+.onboarding3_wrap .circle1 {
+  left: 0;
+  background-color: #edb440;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding3_wrap .circle2 {
+  left: 18px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding3_wrap .circle3 {
+  left: 36px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding3_wrap .circle4 {
+  left: 54px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding4_wrap {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.onboarding4_wrap .onboarding4_box {
+  background-color: #ffffff;
+  width: 375px;
+  height: 667px;
+  position: relative;
+}
+
+.onboarding4_wrap .onboarding4_img {
+  position: absolute;
+  width: 375px;
+  height: 288px;
+  top: 211px;
+  left: 0;
+  object-fit: cover;
+}
+
+.onboarding4_wrap .onboarding4_next_btn {
+  position: absolute;
+  width: 343px;
+  height: 51px;
+  bottom:20px;
+  left:50%;
+  margin-left:-172px;
+  background-color: #5e26b8;
+  border-radius: 25.5px;
+}
+
+.onboarding4_wrap .onboarding4_next_btn_text {
+  top: 10px;
+  left: 142px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #ffffffee;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.onboarding4_wrap .onboarding4_logo {
+  position: absolute;
+  width: 40px;
+  height: 56px;
+  top: 40px;
+  left: 168px;
+}
+
+.onboarding4_wrap .onboarding4_logo_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.onboarding4_wrap .onboarding4_ment {
+  top: 145px;
+  left: -15px;
+  width: 400px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.onboarding4_wrap .onboarding4_skip {
+  position: absolute;
+  top: 15px;
+  left: 304px;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-weight: 400;
+  color: #edb440;
+  font-size: 20px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.onboarding4_wrap .onboarding4_more {
+  position: absolute;
+  width: 62px;
+  height: 8px;
+  top: 538px;
+  left: 156px;
+}
+
+.onboarding4_wrap .circle1 {
+  left: 0;
+  background-color: #edb440;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding4_wrap .circle2 {
+  left: 18px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding4_wrap .circle3 {
+  left: 36px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding4_wrap .circle4 {
+  left: 54px;
+  background-color: #d9d9d9;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  border-radius: 4px;
+}
+
+.onboarding5_wrap {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .onboarding5_wrap .onboarding5_box {
+    background-color: #ffffff;
+    width: 375px;
+    height: 667px;
+    position: relative;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree {
+    position: absolute;
+    width: 343px;
+    height: 230px;
+    top: 350px;
+    left: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #eeeeee;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+.agree_all{ position: relative; top:-290px;}
+
+
+  
+  .onboarding5_wrap .onboarding5_agree_text01 {
+    top: 22px;
+    left: 50px;
+    font-family: "Segoe UI-Regular", sans-serif;
+    color: #666666;
+    font-size: 14px;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_check01 {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 19px;
+    left: 14px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_text02 {
+    top: 73px;
+    left: 50px;
+    font-family: "Segoe UI-Regular", sans-serif;
+    color: #666666;
+    font-size: 14px;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_check02 {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 70px;
+    left: 14px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_text03 {
+    top: 109px;
+    left: 50px;
+    font-family: "Segoe UI-Regular", sans-serif;
+    color: #666666;
+    font-size: 14px;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_check03 {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 121px;
+    left: 14px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_text04 {
+    top: 161px;
+    left: 50px;
+    font-family: "Segoe UI-Regular", sans-serif;
+    color: #666666;
+    font-size: 14px;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_check04 {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 172px;
+    left: 14px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_info01 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 22px;
+    left: 307px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_info02 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 73px;
+    left: 307px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_info03 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 124px;
+    left: 307px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_info04 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 175px;
+    left: 307px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_btn {
+    position: absolute;
+    width: 343px;
+    height: 51px;
+    top: 596px;
+    left: 16px;
+    background-color: #9d9d9d;
+    border-radius: 25.5px;
+  }
+  
+  .onboarding5_wrap .onboarding5_agree_btn_text {
+    top: 14px;
+    left: 142px;
+    font-family: "Segoe UI-Semibold", sans-serif;
+    color: #ffffffee;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .onboarding5_wrap .onboarding5_logo {
+    position: absolute;
+    width: 40px;
+    height: 56px;
+    top: 40px;
+    left: 168px;
+  }
+  
+  .onboarding5_wrap .onboarding5_logo_wrap {
+    position: relative;
+    height: 56px;
+  }
+  
+  .onboarding5_wrap .onboarding5_logo_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .onboarding5_wrap .onboarding5_text {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 180px;
+    font-family: "Segoe UI-Regular", sans-serif;
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .onboarding5_wrap .onboarding5_all_agree {
+    top: 234px;
+    left: 65px;
+    font-family: "Segoe UI-Regular", sans-serif;
+    color: #333333;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .onboarding5_wrap .onboarding5_all_agree_btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 236px;
+    left: 25px;
+  }
+
+
+/* 온보딩 CSS end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 로그인 페이지 css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {-webkit-font-smoothing: antialiased; box-sizing: border-box;}
+html,
+body {margin: 0px; height: 100%;}
+a {text-decoration: none;}
+.login_wrap {background-color: #ffffff; display: flex;  flex-direction: row; justify-content: center; width: 100%;}
+
+.login_wrap .login_wrap_box {background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+.login_wrap .login_btn {position: absolute; width: 343px; height: 51px; top: 384px; left: 16px; background-color: #9d9d9d; border-radius: 25.5px;}
+.login_wrap .login_btn_text {top: 0px; left: 0px; font-family: "Segoe UI-Semibold", Helvetica; color: #ffffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0;     width: 343px;
+    height: 51px;
+    line-height: 51px;}	
+.login_wrap .fanpia-textlogo {position: absolute; left: 168px; top:40px;}
+.login_wrap .fanpia_login {position: absolute;left: 50%;height: 56px; top:50px;}
+.login_wrap_body{position: relative; top:60px;}
+.login_wrap .id_box {position: absolute; width: 343px; height: 50px; top: 210px; left: 16px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #dddddd;}
+#login_page input, #login_page input:focus { padding-left: 10px;}
+#login_page input::placeholder{color:#dddddd;}
+.login_wrap .id_box_text {position: absolute; top: 13px; left: 19px; font-family: "Segoe UI-Regular", Helvetica; font-weight: 400; color: #dddddd; font-size: 16px; letter-spacing: 0; line-height: normal;}
+.login_wrap .pass_box_text {position: absolute; top: 13px; left: 19px; font-family: "Segoe UI-Regular", Helvetica; font-weight: 400; color: #dddddd; font-size: 16px; letter-spacing: 0; line-height: normal;}
+.login_wrap .pass_box {position: absolute; width: 343px; height: 50px; top: 275px; left: 16px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #dddddd; background: url(../img/icon/eyes_off.png) no-repeat; background-position: 303px center;}
+.login_wrap .visibility {position: absolute; width: 24px; height: 24px; top: 12px; left: 303px;}
+.login_wrap .sns_login_box {position: relative; width: 344px; height: 30px; top: 500px; left: 16px;}
+.sns_loging_box > a {}
+.login_wrap .sns_line {position: absolute; width: 344px; height: 1px; top: 14px; left: 0; background-color:#dddddd;}
+
+.login_wrap .rectangle_text {position: absolute; width: 100px; height: 30px; top: 0; left: 122px; background-color: #ffffff;}
+
+.login_wrap .sns_login_text {top: 5px; left: 138px; font-family: "Segoe UI-Regular", Helvetica; color: #9d9d9dee; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.login_wrap .naver {position: absolute; width: 70px; height: 70px; top: 550px; left: 43px; background-color: #00c54e; border-radius: 35px;}
+
+.login_wrap .naver-logo {position: absolute; width: 20px; height: 20px; top: 25px; left: 25px;}
+
+.login_wrap .kakao {position: absolute; width: 70px; height: 70px; top: 550px; left: 153px; background-color: #fee500; border-radius: 35px;}
+
+.login_wrap .kakao-logo {position: absolute; width: 26px; height: 26px; top: 22px; left: 22px; object-fit: cover;}
+
+.login_wrap .google{position: absolute; width: 70px; height: 70px; top:550px; left: 263px; background-color: #ffffff; border-radius: 35px; border: 1px solid; border-color: #dddddd;}
+
+.login_wrap .google-logo {position: absolute; width: 24px; height: 24px; top: 22px; left: 22px; object-fit: cover;}
+
+.login_wrap .login_find {top: 334px; left: 26px; font-family: "Segoe UI-Regular", Helvetica; color: #9d9d9dee; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.login_wrap .wellcome { width: 375px;  text-align: center; top: 164px; left: 0; font-family: "Segoe UI-Regular", Helvetica; color: #333333; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+/* 로그인 페이지 CSS end */
+
+
+
+
+
+
+
+
+/* 티켓 등록 페이지 CSS  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+ul, li{list-style:none;}
+
+.ticket_upload_wrap {background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;}
+
+.ticket_upload_wrap .ticket_upload_wrap_box {    background-color: #ffffff;
+    width: 375px;
+    height: 667px;
+    position: relative;}
+	
+.main_go{    position: absolute;
+    top: 15px;
+    right: 15px;
+	z-index:200;
+    font-family: "ABeeZee-Regular", sans-serif;
+    font-weight: 400;
+    color: #edb440;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;}
+
+.ticket_upload_header {position: absolute; width: 40px; height: 56px; top: 0px; left: 50%; width:375px; ma}
+.up_header_text{position: relative;
+    top: 0;}
+
+
+.process_bar_wrap01{position:relative; top:250px; left:-14px;} 
+.process_bar_wrap01 > ul> li{width:102px; height:4px; background:#dddddd; border-radius:50px; float:left; margin-left:9px;}
+.process_bar_wrap01 .step01{ margin-left:0px;} 
+.process_bar_wrap01 > ul> li.bar_on{background:#EDB440;}
+
+
+#ticket_upload_page .fanpia_login_box{position: relative; height: 56px;}
+
+
+.ticket_upload_wrap .ticket_upload_logo_img{position: absolute; width: 40px; height: 56px; top: 0; left: 0;}
+
+.ticket_upload_img {position: absolute;
+    left: 50%;
+    height: 56px;
+    top: 50px;}
+
+.ticket_upload_wrap .vector {position: absolute; width: 17px; height: 56px; top: 0; left: 0;}
+
+.ticket_upload_wrap .group {position: absolute; width: 40px; height: 17px; top: 17px; left: 0;}
+
+.ticket_upload_wrap .img {position: absolute; width: 40px; height: 17px; top: 0; left: 0;}
+
+.ticket_upload_text {    width: 375px;
+    text-align: center;
+    top: 164px;
+    left: 0;
+    font-family: "Segoe UI-Regular", Helvetica;
+    color: #333333;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;}
+
+.ticket_upload_wrap .ticket_upload_search_text {position: absolute; width: 343px; height: 50px; top: 220px; left: 16px; background-color: #ffffff; border-radius: 25px; border: 1px solid; border-color: #dddddd; padding:20px;}
+.input_box{position:absolute; top:80px;}
+
+
+
+.ticket_upload_wrap .ticket_upload_search {position: absolute; width: 30px; height: 30px; top: 229px; left: 316px;}
+
+.ticket_upload_button {position: absolute;
+    width: 343px;
+    height: 51px;
+    line-height: 51px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -176px;
+    background-color: #9D9D9D;
+    border-radius: 25.5px;}
+
+.ticket_upload_button_text {display: flex
+;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 100%;	
+    font-family: "Segoe UI-Semibold", sans-serif;
+    color: #ffffffee;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;}
+
+
+
+.ticket_search_wrap {background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; height:100%; top:0; left:0; position:absolute;}
+
+.ticket_search_wrap .ticket_search_wrap_box { background-color: #ffffff; width: 375px; height: 667px; position: relative; left:0;}
+
+.ticket_search_wrap .ticket_search_bar {position: absolute; width: 343px; height: 50px; top: 80px; left: 16px; background-color: #ffffff; border-radius: 25px; border: 1px solid; border-color: #dddddd;}
+
+.ticket_search_wrap .ticket_search_search_text {top: 7px; left: 19px; font-family: "Segoe UI-Regular", Helvetica; color: #333333; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.ticket_search_wrap .ticket_search_img {position: absolute; width: 30px; height: 30px; top: 9px; left: 297px;}
+
+.ticket_search_wrap .ticket_search_back_img {position: absolute; width: 24px; height: 24px; top: 16px; left: 16px;}
+
+.ticket_search_wrap .ticket_search_title {top: 13px; left: 120px; font-family: "Segoe UI-Regular", Helvetica; color: #333333; font-size: 20px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.ticket_search_wrap .stray-kids01 {position: absolute; top: 202px; left: 146px; font-family: "Segoe UI-Semibold", Helvetica; font-weight: 400; color: #000000; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.ticket_search_wrap .ticket_search_bottom_border01 {background: #dddddd; width:343px; height:1px; position:absolute; top:298px; left:10px;}
+
+.ticket_search_wrap .svt-fan {position: absolute; top: 356px; left: 145px; font-family: "Segoe UI-Semibold", Helvetica; font-weight: 400; color: #000000; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.ticket_search_wrap .ticket_search_bottom_border02 {background: #dddddd; width:343px; height:1px; position:absolute; top:453px; left:10px;}
+
+.ticket_search_wrap .newjeans-fan {position: absolute; top: 510px; left: 151px; font-family: "Segoe UI-Semibold", Helvetica; font-weight: 400; color: #000000; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.ticket_search_wrap .ticket_search_skids_img01 {position: absolute; width: 93px; height: 124px; top: 160px; left: 31px; object-fit: cover;}
+
+.ticket_search_wrap .ticket_search_svt_img {position: absolute; width: 93px; height: 124px; top: 314px; left: 31px; object-fit: cover;}
+.ticket_search_wrap .ticket_search_newjeans_img {position: absolute; width: 93px; height: 124px; top: 468px; left: 31px; object-fit: cover;}
+
+/* 기본 상태 */
+.ticket_search_wrap div {border: none;}
+/* 활성화 상태 */
+
+
+
+.ticket_search_wrap .ticket_search_straykids.active {border: 2px solid #5E26B8; border-radius: 30px; height: 144px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 선택 사항 */ margin-top:93px; }
+.ticket_search_wrap .ticket_search_seventeen.active {border: 2px solid #5E26B8; border-radius: 30px; height: 144px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 선택 사항 */ margin-top: 246px;  }
+.ticket_search_wrap .ticket_search_newjeans.active {border: 2px solid #5E26B8; border-radius: 30px; height: 144px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 선택 사항 */ margin-top: 401px; }
+
+
+.ticket_search_wrap .ticket_search_button {position: absolute; width: 375px; height: 87px; bottom: 20px; left: 50%; margin-left:-176px; background-image: url(./img/rectangle-2576.svg); background-size: 100% 100%;}
+
+.ticket_search_wrap .ticket_search_button_color {position: absolute; width: 343px; height: 51px; top: 16px; left: 50%; margin-left:-175px; background-color: #9d9d9d; border-radius: 25.5px;}
+
+.ticket_search_wrap .ticket_search_button_text {top: 30px; left: 158px; font-family: "Segoe UI-Semibold", Helvetica; color: #ffffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+.ticket_search_wrap .ticket_search_button_text a{color:#ffffff; font-weight:300;}
+
+
+.ticket_search_finish_wrap {background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; height:100%;}
+
+.ticket_search_finish_wrap .ticket_search_finish_wrap_box {background-color: #ffffff; width: 375px; height: 667px; position: relative; }
+
+.ticket_search_finish_wrap .ticket_search_finish_Concert {position: absolute; width: 343px; height: 144px; top: 380px; left: 16px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #5e26b8;}
+
+.ticket_search_finish_wrap .ticket_search_bottom_border {position: absolute; width: 343px; height: 144px; top: -1px; left: -1px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #5e26b8;}
+
+.ticket_search_finish_wrap .ticket_search_skids_img02 {position: absolute; width: 93px; height: 124px; top: 9px; left: 9px; object-fit: cover;}
+
+.ticket_search_finish_wrap .stray-kids02 {position: absolute; top: 49px; left: 122px; font-family: "Segoe UI-Semibold", Helvetica; font-weight: 400; color: #000000; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.ticket_search_finish_wrapent .ticket_search_finish_logo_img {position: absolute; width: 40px; height: 56px; top: 40px; left: 168px;}
+
+.ticket_search_finish_wrap .ticket_search_finish_img {position: relative; height: 56px;}
+
+
+.ticket_search_finish_wrap .ticket_search_finish_img {position: absolute; width: 40px; height: 56px; top: 25px; left: 91px;}
+
+.ticket_search_finish_wrap .ticket_upload_search_text {position: absolute;
+    width: 343px;
+    height: 50px;
+    top: 220px;
+    left: 16px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: #dddddd;
+    padding: 20px;}
+	
+.ticket_search_finish_wrap .ticket_upload_search{position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 229px;
+    left: 316px;}
+
+.ticket_search_finish_wrap .ticket_search_finish_search_text {top: 7px; left: 19px; font-family: "Segoe UI-Regular", Helvetica; color: #333333; position: absolute; font-weight: 400; font-size: 16px; letter-spacing: 0; line-height: normal; }
+
+.ticket_search_finish_wrap .process_bar_wrap02{position:relative; top:180px; left:-14px;} 
+.ticket_search_finish_wrap .process_bar_wrap02 > ul> li{width:102px; height:4px; background:#dddddd; border-radius:50px; float:left; margin-left:9px;}
+.ticket_search_finish_wrap .process_bar_wrap02 .step01{ margin-left:0px;} 
+.ticket_search_finish_wrap .process_bar_wrap02 > ul> li.bar_on{background:#EDB440;}
+
+.ticket_search_finish_wrap .ticket_search_finish_text {top: 127px; left: 110px; font-family: "Segoe UI-Regular", Helvetica; color: #333333; text-align: center; position: absolute; font-weight: 400; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.ticket_search_finish_wrap .search {position: absolute; width: 30px; height: 30px; top: 9px; left: 297px;}
+
+.ticket_search_finish_wrap .ticket_search_finish__button {position: relative; width: 343px; height: 51px; bottom: 20px; left:50%; margin-left:-175px; background-color: #5e26b8; border-radius: 25.5px;}
+
+.ticket_search_finish_wrap .ticket_upload_search_finish_text {top: 14px; left: 142px; font-family: "Segoe UI-Semibold", sans-serif; color: #ffffffee; text-align: center; position: absolute; font-weight: 400; font-size: 16px; letter-spacing: 0; line-height: normal;}
+.ticket_upload_search_finish_text a {font-weight:300; color:#ffffff;}
+
+
+
+.ticket_input_wrap {background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; height:100%;}
+
+.ticket_input_wrap .ticket_input_wrap_box {background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+
+.ticket_input_wrap .ticket_input_Concert {position: absolute; width: 343px; height: 144px; top: 380px; left: 16px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #5e26b8;}
+
+.ticket_input_wrap .ticket_input_border {position: absolute; width: 343px; height: 144px; top: -1px; left: -1px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #5e26b8;}
+
+.ticket_input_wrap .ticket_input_skids_img03 {position: absolute; width: 93px; height: 124px; top: 9px; left: 9px; object-fit: cover;}
+
+.ticket_input_wrap .stray-kids03 {position: absolute; top: 49px; left: 122px; font-family: "Segoe UI-Semibold", Helvetica; font-weight: 400; color: #000000; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.ticket_input_wrap .ticket_input_logo_img {position: absolute; width: 40px; height: 56px; top: 40px; left: 168px;}
+
+.ticket_input_wrap .ticket_input_img {position: relative; height: 56px;}
+
+.ticket_input_wrap .ticket_input_img {position: absolute; width: 40px; height: 56px;}
+
+.ticket_input_wrap .ticket_input_text_box {position: absolute; width: 343px; height: 50px; top: 300px; left: 16px; background-color: #ffffff; border-radius: 15px; border: 1px solid; border-color: #dddddd;}
+
+.ticket_input_wrap .ticket_input_search_text {top: 7px; left: 19px; font-family: "Segoe UI-Regular", Helvetica; color: #333333; position: absolute; font-weight: 400; font-size: 16px; letter-spacing: 0; line-height: normal; }
+
+.ticket_input_wrap .process_bar_wrap03{position:relative; top:180px; left:-14px;} 
+.ticket_input_wrap .process_bar_wrap03 > ul> li{width:102px; height:4px; background:#dddddd; border-radius:50px; float:left; margin-left:9px;}
+.ticket_input_wrap .process_bar_wrap03 .step01{ margin-left:0px;} 
+.ticket_input_wrap .process_bar_wrap03 > ul> li.bar_on{background:#EDB440;}
+
+.ticket_input_wrap .ticket_input_text {top: 127px; left: 110px; font-family: "Segoe UI-Regular", Helvetica; color: #333333; text-align: center; position: absolute; font-weight: 400; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.ticket_input_wrap .ticket_input_button {
+	position: absolute;
+    width: 343px;
+    height: 51px;
+    line-height: 51px;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -176px;
+    background-color: #9D9D9D;
+    border-radius: 25.5px;
+}}
+
+.ticket_input_button.inactive {
+  background-color: #dddddd; /* 비활성화 색상 */
+  cursor: not-allowed; /* 비활성화 상태 표시 */
+}
+
+.ticket_input_button.active {
+  background-color: #5e26b8; /* 보라색 */
+  cursor: pointer;
+}
+
+
+.ticket_input_wrap .ticket_upload_input_text {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 100%;
+    font-family: "Segoe UI-Semibold", sans-serif;
+    color: #ffffffee;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;}
+.ticket_input_wrap .ticket_upload_input_text a {font-weight:300; color:#ffffff;}
+
+.ticket_final_info_wrap {background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+
+.ticket_final_info_wrap .ticket_final_info_wrap_box {background-color: #ffffff; width: 375px; height: 667px; position: relative; } 
+ .up_fanpia-textlogo {position: absolute;top: 40px; left: 168px;}
+
+.ticket_final_info_wrap .overlap-group {position: relative; height: 56px;}
+
+
+.ticket_final_info_wrap .ticket_final_info_text {top: 112px; left: 79px; font-family: "Segoe UI-Regular", Helvetica; color: #333333; font-size: 16px; text-align: center; line-height: normal; position: absolute; font-weight: 400; letter-spacing: 0;}
+
+.ticket_final_info_wrap .process_bar_wrap04{position:relative; top:127px; left:-14px;} 
+.ticket_final_info_wrap .process_bar_wrap04 > ul> li{width:102px; height:4px; background:#dddddd; border-radius:50px; float:left; margin-left:9px;}
+.ticket_final_info_wrap .process_bar_wrap04 .step01{ margin-left:0px;} 
+.ticket_final_info_wrap .process_bar_wrap04 > ul> li.bar_on{background:#EDB440;}
+
+.ticket_final_info_wrap .ticket_final_info_border {background: #dddddd; width: 323px; height: 1px;   position: absolute; top: 150px; left: 8px;}
+
+.ticket_final_info_wrap .ticket_final_info_button {position: absolute; width: 343px; height: 51px; bottom:20px; left: 50%;  margin-left:-172px;  background-color: #5e26b8; border-radius: 25.5px;}
+
+.ticket_final_info_wrap .ticket_final_info_img {position: absolute; width: 40px; height: 56px; top: 0px; left: 85px;}
+
+.ticket_final_info_wrap .ticket_final_info_img {position: relative; height: 56px; top:22px;}
+
+.ticket_final_info_wrap .ticket_final_info_button_text {top: 14px; left: 142px; font-family: "Segoe UI-Semibold", Helvetica; color: #ffffffee; font-size: 16px; text-align: center; line-height: normal;   position: absolute; font-weight: 400; letter-spacing: 0;}
+
+.ticket_final_info_wrap .ticket_final_info_button_text a{color:#ffffff; font-weight:300;}
+
+.ticket_final_info_wrap .ticket_input_skids_box {position: absolute; width: 343px; height: 310px; top: 300px; left: 16px; border-radius: 10px; border: 1px solid; border-color: #5e26b8;}
+
+.ticket_final_info_wrap .ticket_input_skids_img04 {position: absolute; width: 93px; height: 124px; top: 9px; left: 9px; object-fit: cover;}
+
+.ticket_final_info_wrap .stray-kids04 {position: absolute; top: 51px; left: 122px; font-family: "Segoe UI-Semibold", Helvetica; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.ticket_final_info_wrap .ticket_final_info {top: 157px; left: 14px; font-family: "Segoe UI-Regular", Helvetica; color: transparent; font-size: 14px; line-height: 25px; position: absolute; font-weight: 400; letter-spacing: 0;}
+
+.ticket_final_info_wrap .ticket_final_info_span {color: #9d9d9d;}
+
+.ticket_final_info_wrap .ticket_final_info_s {color: #333333;}
+
+.ticket_final_info_wrap .ticket_final_info_P {position: absolute; top: 157px; left: 93px; font-family: "Segoe UI-Regular", Helvetica; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0;   line-height: 25px;} 
+
+
+.ticket_upload_finish_wrap {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.ticket_upload_finish_wrap .ticket_upload_finish_wrap_box {
+  background-color: #ffffff;
+  width: 375px;
+  height: 667px;
+  position: relative; 
+}
+
+.ticket_upload_finish_wrap .ticket_upload_finish_logo_img {
+  position: absolute;
+  width: 40px;
+  height: 56px;
+  top: 40px;
+  left: 177px;
+}
+
+.ticket_upload_finish_wrap .ticket_upload_finish_img {
+  position: relative;
+  width:40px;
+  height: 56px;
+}
+
+.ticket_upload_finish_wrap .ticket_upload_finish_button {
+  position: absolute;
+  width: 343px;
+  height: 51px;
+  bottom:20px;
+  left: 50%;
+  margin-left:-172px;
+  background-color: #5e26b8;
+  border-radius: 25.5px;
+}
+
+.ticket_upload_finish_wrap .ticket_upload_finish_button_text {
+  top: 14px;
+  left: 127px;
+  font-family: "Segoe UI-Semibold", Helvetica;
+  color: #ffffffee;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ticket_upload_finish_wrap .ticket_upload_finish_text {
+  top: 127px;
+  left: 72px;
+  font-family: "Segoe UI-Regular", Helvetica;
+  color: #333333;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ticket_upload_finish_wrap .ticket_upload_finish_png {
+  position: absolute;
+  width: 316px;
+  height: 316px;
+  top: 230px;
+  left: 30px;
+  object-fit: cover;
+}
+
+/* 티켓 등록 완료 페이지 CSS end */
+
+
+
+
+
+
+
+
+/* 메인 페이지 CSS */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 ;
+  outline: -webkit-focus-ring-color auto 5px ;
+}
+a {
+  text-decoration: none;
+}
+
+:root {
+  --wwwfigmacomblack: rgba(0, 0, 0, 1);
+  --typo-colorgray-500: rgba(142, 142, 142, 1);
+  --www-figma-com-inter-italic-font-family: "Inter", sans-serif;
+  --www-figma-com-inter-italic-font-weight: 400;
+  --www-figma-com-inter-italic-font-size: 11px;
+  --www-figma-com-inter-italic-letter-spacing: 0px;
+  --www-figma-com-inter-italic-line-height: normal;
+  --www-figma-com-inter-italic-font-style: italic;
+  --www-figma-com-inter-medium-font-family: "Inter", sans-serif;
+  --www-figma-com-inter-medium-font-weight: 500;
+  --www-figma-com-inter-medium-font-size: 11px;
+  --www-figma-com-inter-medium-letter-spacing: 0px;
+  --www-figma-com-inter-medium-line-height: normal;
+  --www-figma-com-inter-medium-font-style: normal;
+  --www-figma-com-inter-medium-italic-font-family: "Inter", sans-serif;
+  --www-figma-com-inter-medium-italic-font-weight: 500;
+  --www-figma-com-inter-medium-italic-font-size: 11px;
+  --www-figma-com-inter-medium-italic-letter-spacing: 0px;
+  --www-figma-com-inter-medium-italic-line-height: normal;
+  --www-figma-com-inter-medium-italic-font-style: italic;
+  --www-figma-com-inter-regular-font-family: "Inter", sans-serif;
+  --www-figma-com-inter-regular-font-weight: 400;
+  --www-figma-com-inter-regular-font-size: 11px;
+  --www-figma-com-inter-regular-letter-spacing: 0px;
+  --www-figma-com-inter-regular-line-height: normal;
+  --www-figma-com-inter-regular-font-style: normal;
+  --www-figma-com-inter-semi-bold-font-family: "Inter", sans-serif;
+  --www-figma-com-inter-semi-bold-font-weight: 600;
+  --www-figma-com-inter-semi-bold-font-size: 13px;
+  --www-figma-com-inter-semi-bold-letter-spacing: -0.03200000151991844px;
+  --www-figma-com-inter-semi-bold-line-height: 22px;
+  --www-figma-com-inter-semi-bold-font-style: normal;
+  --www-figma-com-inter-semi-bold-italic-font-family: "Inter", sans-serif;
+  --www-figma-com-inter-semi-bold-italic-font-weight: 600;
+  --www-figma-com-inter-semi-bold-italic-font-size: 11px;
+  --www-figma-com-inter-semi-bold-italic-letter-spacing: 0px;
+  --www-figma-com-inter-semi-bold-italic-line-height: normal;
+  --www-figma-com-inter-semi-bold-italic-font-style: italic;
+  --www-figma-com-semantic-button-font-family: "Inter", sans-serif;
+  --www-figma-com-semantic-button-font-weight: 500;
+  --www-figma-com-semantic-button-font-size: 11px;
+  --www-figma-com-semantic-button-letter-spacing: 0.054999999701976776px;
+  --www-figma-com-semantic-button-line-height: 16px;
+  --www-figma-com-semantic-button-font-style: normal;
+  --www-figma-com-semantic-button-upper-font-family: "Inter", sans-serif;
+  --www-figma-com-semantic-button-upper-font-weight: 400;
+  --www-figma-com-semantic-button-upper-font-size: 12px;
+  --www-figma-com-semantic-button-upper-letter-spacing: 0px;
+  --www-figma-com-semantic-button-upper-line-height: 24px;
+  --www-figma-com-semantic-button-upper-font-style: normal;
+  --: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.main_wrap {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+ 
+}
+
+.main_wrap .main_wrap_box {
+
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 375px;
+  height: 1420px;
+  position: relative; top:-70px; margin-bottom: -50px;
+  
+}
+
+.main_wrap .main_img {
+  position: absolute; 
+  width: 363px;
+  height: 110px;
+  top: 909px;
+  left: 6px;
+  z-index:20;
+}
+
+.main_wrap .main_img_wrap {
+  position: absolute;
+  width: 343px;
+  height: 190px;
+  top: 70px;
+  left: 16px;
+  background-image: url(./img/mask-group-6.png);
+  background-size: 100% 100%;
+}
+
+.main_wrap .main_visual_img {
+  width: 343px;
+  height: 190px;
+  border-radius: 0px 0px 16px 16px;
+  background: url(../img/main/main_img.png) no-repeat; 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main_wrap .stray-kids_title {
+  position: absolute;
+  top: 112px;
+  left: 15px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .checklist_wrap {
+  position: absolute;
+  width: 343px;
+  height: 131px;
+  top: 441px;
+  left: 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .checklist_box_header {
+  position: absolute;
+  width: 343px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  background-color: #581db5;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.main_wrap .checklist_box_header_title {
+  position: absolute;
+  top: 7px;
+  left: 146px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .checklist01 {
+  top: 29px;
+  left: 40px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #9d9d9d;
+  font-size: 14px;
+  letter-spacing: 0;
+  text-decoration: line-through;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .checklist02 {
+  top: 56px;
+  left: 40px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .checklist03 {
+  top: 83px;
+  left: 40px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
+.main_wrap .checklist_icon_wrap {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 46px;
+  left: 15px;
+}
+
+.main_wrap .check_list1 {
+  position: absolute;
+  
+  left: -1px;
+}
+.main_wrap .check_list2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 26px;
+  left: -1px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #d9d9d9;
+}
+
+.main_wrap .check_list3 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 53px;
+  left: -1px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #d9d9d9;
+}
+
+
+.main_wrap .img {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+}
+
+.main_wrap .my_ticket_wrap {
+  position: absolute;
+  width: 125px;
+  height: 102px;
+  top: 280px;
+  left: 16px;
+  border-radius: 10px;
+}
+
+.main_wrap .my_ticket_box {
+  width: 125px;
+  height: 102px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #dddddd;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.main_wrap .my_ticket_text {
+  position: absolute;
+  top: 70px;
+  left: 37px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .my_ticket {
+  position: absolute;
+  width: 94px;
+  height: 70px;
+  top: 5px;
+  left: 15px;
+}
+
+.main_wrap .stick_wrap {
+  position: absolute;
+  width: 208px;
+  height: 46px;
+  top: 280px;
+  left: 151px;
+  border-radius: 10px;
+}
+
+.main_wrap .stick_box{
+  width: 208px;
+  height: 46px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #dddddd;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main_wrap .stick_text {
+  top: 13px;
+  left: 59px;
+  font-size: 14px;
+  position: absolute;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .stick_group {
+  position: absolute;
+  width: 13px;
+  height: 21px;
+  top: 13px;
+  left: 17px;
+  transform: rotate(-45deg);
+}
+
+.main_wrap .group-wrapper {
+  position: absolute;
+  width: 6px;
+  height: 7px;
+  top: 14px;
+  left: 3px;
+}
+
+.main_wrap .img-wrapper {
+  position: relative;
+  height: 7px;
+}
+
+.main_wrap .group-2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -1px;
+  left: -2px;
+  transform: rotate(45deg);
+}
+
+.main_wrap .stick {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+/* 입장시간 카운트 */
+.main_wrap #count_wrap {
+  position: absolute;
+  width: 208px;
+  height: 46px;
+  top: 336px;
+  left: 151px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #ddddddee;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+}
+
+.main_wrap #count_ment {
+  top: 4px;
+  left: 33px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #9d9d9d;
+  font-size: 12px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap #counter {
+  top: 7px;
+  left: 118px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #581db5;
+  font-size: 20px;
+  letter-spacing: -3px;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+  width: 90px;
+
+}
+
+.main_wrap .alarm {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 9px;
+}
+/* 입장시간 카운트 end */
+
+.main_wrap .md_title {
+  position: absolute;
+  top: 611px;
+  left: 16px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  line-height: normal;
+}
+
+.main_wrap .checklist_title {
+  top: 411px;
+  left: 16px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  position: absolute;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.main_wrap .md_menu01 {
+  position: absolute;
+  width: 107px;
+  height: 30px;
+  top: 646px;
+  left: 16px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #dddddd;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+}
+
+.main_wrap .md_menu_text01 {
+  top: 5px;
+  left: 30px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .md_menu02 {
+  position: absolute;
+  width: 108px;
+  height: 30px;
+  top: 646px;
+  left: 133px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #dddddd;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .md_menu_text02, .main_wrap .md_menu_text03 {
+  top: 5px;
+  left: 32px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  text-align: center;
+  position: absolute;
+  font-weight: 400;
+  color: #333333;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .md_menu03 {
+  position: absolute;
+  width: 107px;
+  height: 30px;
+  top: 646px;
+  left: 252px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #dddddd;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .event_title {
+  position: absolute;
+  top: 895px;
+  left: 16px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: bold;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  line-height: normal;	
+}
+
+.event_box{ position:relative; top: 920px; overflow: hidden;
+  width: 100%; justify-content: center;}
+.event_wrap > img{margin-left: 16px; float:left; display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: max-content; cursor: grab;
+  user-select: none;}
+
+.event_wrap .event01{margin-left: 6px;}
+.event_wrap .event01{margin-right: -10px;}
+
+.main_wrap .info_title {
+  top: 1046px;
+  left: 16px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  position: absolute;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.main_wrap .md_box {
+  position: absolute;
+  width: 909px;
+  height: 175px;
+  top: 681px;
+  left: 16px;
+}
+
+
+/* left �� ?�ܼ� ������ �ϱ� */
+.md_wrap{width:910px; height:195px;overflow:hidden; position:relative; left: -10px; }
+.md_wrap > div{float:left; margin-left:10px; margin-top:10px;}
+
+
+.main_wrap .md_item01 {
+  position: absolute;
+  width: 137px;
+  height: 177px;
+  top: -1px;
+  left: -1px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .md_item_img01 {
+  position: absolute;
+  width: 135px;
+  height: 121px;
+  top: 0;
+  left: 0;
+}
+
+.main_wrap .md_item_name {
+  position: absolute;
+  width: 130px;
+  top: 126px;
+  left: 5px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .md_item_pay01 {
+  left: 76px;
+  position: absolute;
+  top: 151px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .overlap-10 {
+  position: absolute;
+  width: 137px;
+  height: 177px;
+  top: -1px;
+  left: 449px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .md_item_pay02 {
+  position: absolute;
+  top: 151px;
+  left: 74px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .md_item02 {
+  position: absolute;
+  width: 137px;
+  height: 177px;
+  top: -1px;
+  left: 149px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .md_item_img02 {
+  position: absolute;
+  width: 135px;
+  height: 120px;
+  top: 0;
+  left: 0;
+}
+
+.main_wrap .overlap-group-2 {
+  position: absolute;
+  width: 137px;
+  height: 177px;
+  top: -1px;
+  left: 599px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .md_item_pay04 {
+  left: 80px;
+  position: absolute;
+  top: 151px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .md_item_pay05 {
+  left: 80px;
+  position: absolute;
+  top: 151px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .overlap-12 {
+  position: absolute;
+  width: 137px;
+  height: 177px;
+  top: -1px;
+  left: 299px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .md_item_pay03 {
+  left: 72px;
+  position: absolute;
+  top: 151px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .mask-group-5 {
+  position: absolute;
+  
+  height: 120px;
+  top: 0;
+  left: 0;
+}
+
+.main_wrap .overlap-13 {
+  position: absolute;
+  width: 137px;
+  height: 177px;
+  top: -1px;
+  left: 749px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .md_item_pay06 {
+  left: 79px;
+  position: absolute;
+  top: 151px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .best_title {
+  position: absolute;
+  top: 1250px;
+  left: 16px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+
+
+.main_wrap .info_box {
+  position: absolute;
+  width: 593px;
+  height: 143px;
+  top: 1068px;
+  left: 16px;
+}
+
+
+
+/* left �� ?�ܼ� ������ �ϱ� */
+.info_wrap{width:600px; height:160px;overflow:hidden; position:relative; left: -10px; }
+.info_wrap > div{float:left; margin-left:10px; margin-top:10px;}
+
+
+
+
+.main_wrap .info_content01 {
+  position: absolute;
+  width: 135px;
+  height: 143px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .info_content_title01 {
+  top: 113px;
+  left: 32px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .info_content01_icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 9px;
+  left: 16px;
+  object-fit: cover;
+}
+
+.main_wrap .info_content02 {
+  position: absolute;
+  width: 135px;
+  height: 143px;
+  top: 0;
+  left: 150px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .info_content_title02 {
+  top: 113px;
+  left: 30px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .info_content02_icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 9px;
+  left: 17px;
+  object-fit: cover;
+}
+
+.main_wrap .info_content03 {
+  position: absolute;
+  width: 135px;
+  height: 143px;
+  top: 0;
+  left: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .info_content_title03 {
+  top: 113px;
+  left: 41px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .info_content_title04 {
+  top: 113px;
+  left: 41px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .info_content03_icon {
+  position: absolute;
+  
+  height: 100px;
+  top: 9px;
+  left: 16px;
+  object-fit: cover;
+}
+
+.main_wrap .info_content04 {
+  position: absolute;
+  width: 135px;
+  height: 143px;
+  top: 0;
+  left: 450px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .info_content04_icon {
+  position: absolute;
+  width: 95px;
+
+  top: 20px;
+  left: 477px;
+  object-fit: cover;
+}
+
+.main_wrap .best_box {
+  position: absolute;
+  width: 1079px;
+  height: 120px;
+  top: 1272px;
+  left: 16px;
+}
+
+.best_wrap{width:2000px; height:140px;overflow:hidden; position:relative; left: -10px;}
+.best_wrap > div{float:left; margin-left:10px; margin-top:10px;}
+
+
+
+
+
+.main_wrap .best_content02 {
+  position: absolute;
+  width: 343px;
+  height: 120px;
+  top: 0;
+  left: 353px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .best_content_speech_num02 {
+  position: absolute;
+  top: 89px;
+  left: 94px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  color: var(--typo-colorgray-500);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .best_content_text02{
+  left: 14px;
+  font-size: 12px;
+  position: absolute;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: normal;
+  top:30px;
+}
+
+.main_wrap .best_content_text03{
+  left: 14px;
+  font-size: 12px;
+  position: absolute;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: normal;
+    top:30px;
+}
+
+.main_wrap .best_content_time02 {
+  position: absolute;
+  top: 13px;
+  left: 291px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  color: #9a9a9a;
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .best_content_thumb_num02 {
+  top: 89px;
+  left: 39px;
+  color: #9a9a9a;
+  position: absolute;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .best_content_title02 {
+  top: -3px;
+  left: 14px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .best_content03 {
+  position: absolute;
+  width: 343px;
+  height: 120px;
+  top: 0;
+  left: 706px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .best_content_title03 {
+  top: -03px;
+  left: 14px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  position: absolute;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .best_content01 {
+  position: absolute;
+  width: 343px;
+  height: 120px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #eeeeee;
+  box-shadow:  0px 2px 10px rgba(0,0,0,0.05);;
+}
+
+.main_wrap .best_content_text01 {
+  width: 197px;
+  top: 30px;
+  left: 136px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 12px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .best_content_time01{
+  top: 14px;
+  left: 291px;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #9a9a9a;
+  font-size: 10px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main_wrap .best_content_thumb_num01 {
+  top: 89px;
+  left: 161px;
+  color: #9a9a9a;
+  position: absolute;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .best_content_thumb-up {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 88px;
+  left: 136px;
+}
+
+.main_wrap .best_content_speech_num01 {
+  top: 89px;
+  left: 216px;
+  color: var(--typo-colorgray-500);
+  position: absolute;
+  font-family: "Segoe UI-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.main_wrap .best_content_speech-bubble01 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 88px;
+  left: 191px;
+}
+
+.main_wrap .best_content_title01 {
+  top: 11px;
+  left: 136px;
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0;
+  position: absolute;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.main_wrap .best_content_img {
+  position: absolute;
+  width: 121px;
+  height: 118px;
+  top: 0;
+  left: 0;
+}
+
+.main_wrap .best_content_speech-bubble02 {
+  left: 70px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 88px;
+}
+
+.main_wrap .best_content_speech-bubble03 {
+  left: 70px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 88px;
+}
+
+.main_wrap .best_content_thumb-up-2 {
+  left: 14px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 88px;
+}
+
+.main_wrap .best_content_thumb-up-3 {
+  left: 14px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 88px;
+}
+
+/* ���� ������ CSS end */
+
+
+
+
+
+
+
+
+
+/* 블루투스 연결 시작 */
+
+/* 상단의 뒤로가기 버튼 (블루투스, QR 티켓) */
+.bluetooth_perv{ width: 24px; height: 24px;}
+
+
+.bluetooth_wrap{  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;}
+  
+.bluetooth_wrap .bluetooth_box{  background-color: #ffffff;
+  width: 375px;
+  height: 667px;
+  position: relative;}
+
+.bluetooth_contents{width:375px; position:absolute; left:0px; top:0px; }
+
+
+  
+.bluetooth_title{font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+  
+
+  
+.bluetooth_btn{position: absolute; width: 343px; height: 51px; bottom: 20px; left:50%;  margin-left:-172px; background-color: #5e26b8; border-radius: 50px;}
+  
+.bluetooth_btn_text{position: absolute;  width:343px; text-align:center; color: #ffffff;}
+  
+.bluetooth_wrap .bluetooth_img{position: absolute; width: 289px; height: 289px; top: 200px; left: 43px; background-image: url(../img/bluetooth/bluetooth_img.png); background-size: 100% 100%;}
+  
+.bluetooth_wrap .bluetooth_text{ width:375px; position: absolute; top: 104px; text-align: center; color: #333333; line-height: 1.3;}
+
+.bluetooth_wrap2{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+  
+.bluetooth_wrap2 .bluetooth_box2{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+  
+.bluetooth_title{font-family: "Segoe UI-Regular", sans-serif;
+    font-weight: 400;
+    color: #333333;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;}
+	
+#bluetooth_page_02 .ui-header .ui-title, #bluetooth_page_02 .ui-footer .ui-title{margin: 0.18em auto;}	
+  
+.bluetooth_wrap2 .bluetooth_box2_perv{position: absolute; width: 24px; height: 24px; top: 16px; left: 16px;}
+  
+.bluetooth_wrap2 .bluetooth_box2_btn{position: absolute; width: 343px; height: 51px; top: 596px; left: 16px; background-color: #5e26b8; border-radius: 25.5px;}
+
+.bluetooth_wrap2 .bluetooth_box2_btn_text{top: 14px; left: 142px; font-family: "Segoe UI-Semibold", sans-serif; color: #ffffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_text{top: 99px; width:375px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid{position: absolute; width: 343px; height: 392px; top: 151px; left: 16px; background-color: #f5f5f5; border-radius: 10px; border: 1px solid; border-color: #dddddd; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.bluetooth_wrap2 .bluetooth_box2_name{top: 13px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #9a9a9a; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_inner{position: absolute; width: 324px; height: 321px; top: 51px; left: 10px;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_inner_back { position: absolute; width: 323px; height: 321px; top: 0; left: 0; background-color: #ffffff; border-radius: 5px;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_date{position: absolute; top: 92px; left: 68px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #581db5; font-size: 14px; text-align: center; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_date_in{top: 121px; left: 60px; font-family: "Segoe UI-Semibold", sans-serif; color: #333333; font-size: 20px; text-align: center; position: absolute; font-weight: 600; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_time_in{top: 121px; left: 216px; font-family: "Segoe UI-Semibold", sans-serif; color: #333333; font-size: 20px; text-align: center; position: absolute; font-weight: 600; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_time{position: absolute; top: 92px; left: 224px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #581db5; font-size: 14px; text-align: center; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_con{width:323px; position: absolute; top: 14px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 600; color: #333333; font-size: 16px; text-align: center; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_line{width: 1px; height: 81px; top: 82px; left: 161px; position: absolute; background-color: #D9D9D9;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_line2{width: 324px; height: 1px; top: 186px; left: 0; position: absolute; background-color: #D9D9D9;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_place{top: 200px; left: 50%; margin-left:-45px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_floor{top: 239px; left: 62px; font-family: "Segoe UI-Regular", sans-serif; color: #9a9a9a; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_section{top: 239px; left: 116px; font-family: "Segoe UI-Regular", sans-serif; color: #9a9a9a; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_row{top: 239px; left: 182px; font-family: "Segoe UI-Regular", sans-serif; color: #9a9a9a; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_num{top: 239px; left: 234px; font-family: "Segoe UI-Regular", sans-serif; color: #9a9a9a; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_floor_in{position: absolute; top: 270px; left: 65px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 600; color: #333333; font-size: 16px; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_section_in{left: 121px; position: absolute; top: 270px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 600; color: #333333; font-size: 16px; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_row_in{left: 185px; position: absolute; top: 270px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 600; color: #333333; font-size: 16px; letter-spacing: 0; line-height: normal;}
+  
+.bluetooth_wrap2 .bluetooth_box2_mid_num_in{left: 243px; position: absolute; top: 270px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 600; color: #333333; font-size: 16px; letter-spacing: 0; line-height: normal;}
+/* 블루투스 연결 끝 */
+
+
+
+
+
+
+
+/* 마이 티켓(QR) 시작 */
+#my_ticket_page{height:100vh;}
+
+.my_ticket_wrap{background-image: url(../img/my_ticket/my_ticket_back.jpg); background-size: cover; display: flex; flex-direction: row; justify-content: center; width: 100%; background-color: #00000099;  height: 100vh; }
+  
+.my_ticket_wrap .my_ticket_box_pop{ width: 375px; height: 100vh;}
+  
+.my_ticket_wrap .my_ticket_back_img{position: relative; height: 100vh; /* background-image: url(../img/my_ticket/my_ticket_back.png); background-size: cover; background-position: 50% 50%; */ background-color: #00000000;}
+
+.my_ticket_wrap .my_ticket_back{position: absolute; width: 100vw; height: 100vh; top: 0; left: 0px; background-color: #00000099;}
+
+.my_ticket_wrap .my_ticket_head{position: absolute; width: 315px; height: 76px; top: 102px; left: 30px; background-color: #5e26b8; border-radius: 15px 15px 0px 0px; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+
+.my_ticket_wrap .my_ticket_title{position: absolute; top: 14px; left: 152px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #ffffff; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.my_ticket_wrap .my_ticket_perv{position: absolute; width: 24px; height: 24px; top: 16px; left: 16px;}
+
+.my_ticket_mid{width: 315px; height: 380px;}
+
+
+.my_ticket_mid {position: absolute; top: 135px; left: 20px;}
+
+.my_ticket_btn {
+  width: 343px;
+  height: 51px;
+  background-color: #ffffff;
+  border: 1px solid #5e26b8;
+  border-radius: 50px;
+
+  /* ✅ 하단 고정 */
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "Segoe UI-Semibold", sans-serif;
+  color: #5e26b8ee;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 15px;
+
+  z-index: 999; /* 다른 요소보다 위에 보이도록 */
+}
+
+
+.my_ticket_btn>p{width: 343; margin: auto auto;}
+
+.my_ticket_wrap .my_ticket_text_pop{position: absolute; width: 315px; height: 100px; top: 382px; left: 30px; background-color: #eeeeee;}
+
+.my_ticket_wrap .my_ticket_name{top: 114px; left: 291px; font-family: "Segoe UI-Regular", sans-serif; color: #ffffff; font-size: 14px; text-align: right; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.my_ticket_wrap .my_ticket_con{position: absolute; top: 30px;font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 14px; width:335px; text-align: center; letter-spacing: 0; line-height: normal; z-index: 3;}
+
+.my_ticket_wrap .my_ticket_check{top: 210px;  width:335px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.my_ticket_wrap .my_ticket_time{top: 50px;  width:315px;font-family: "Segoe UI-Regular", sans-serif; color: #5e26b8; font-size: 14px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.my_ticket_wrap .my_ticket_seat{position: absolute; width:315px; top: 0px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 600; color: #333333; font-size: 16px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.my_ticket_wrap .my_ticket_num{position: absolute; top: 114px; left: 45px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ffffff; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.my_ticket_wrap .my_ticket_code{position: absolute; width: 148px; height: 148px; top: 186px; left: 114px; z-index: 3;}
+
+/* 마이 티켓(QR) */
+
+
+
+
+
+
+
+
+
+
+/* 체크리스트 */
+.checklist_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+.checklist_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+  
+.checklist_wrap .checklist_box{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+  
+.checklist_wrap .checklist_title { position: absolute; top: 14px; left: 50%; margin-left: -46px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+  
+.checklist_wrap .checklist_prev{width: 24px; height: 24px;}
+  
+.checklist_wrap .checklist_choice{font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #581db5; font-size: 16px; letter-spacing: 0; line-height: normal;}
+  
+.checklist_wrap .checklist_filter1{position: absolute; width: 66px; height: 29px; top: 70px; left: 16px; background-color: #ffffff; border-radius: 23px; border: 1px solid; border-color: #581db5; box-shadow:  0px 2px 10px rgba(0,0,0,0.05); cursor: pointer;}
+
+.checklist_wrap .checklist_filter1_text{top: 3px; left: 19px; font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 14px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_filter2{position: absolute; width: 66px; height: 29px; top: 70px; left: 92px; background-color: #ffffff; border-radius: 23px; border: 1px solid; border-color: #dddddd; box-shadow:  0px 2px 10px rgba(0,0,0,0.05); cursor: pointer;}
+
+.checklist_wrap .checklist_filter2_text{position: absolute; top: 3px; left: 19px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #9d9d9d; font-size: 14px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_filter3{position: absolute; width: 92px; height: 29px; top: 70px; left: 168px; background-color: #ffffff; border-radius: 23px; border: 1px solid; border-color: #dddddd; box-shadow:  0px 2px 10px rgba(0,0,0,0.05); cursor: pointer;}
+
+.checklist_wrap .checklist_content1{position: absolute; width: 343px; height: 137px; top: 119px; left: 16px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+
+.checklist_wrap .checklist_content1_head{position: absolute; width: 343px; height: 30px; top: 0; left: 0; background-color: #581db5; border-radius: 10px 10px 0px 0px;}
+
+.checklist_wrap .checklist_content1_head_text{top: 7px; left: 133px; font-family: "ABeeZee-Regular", sans-serif; color: #ffffff; font-size: 12px; text-align: center; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content_list1{top: 30px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content2_list1{top: 43px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content_list2{top: 59px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content_list3{top: 88px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content2_list3{top: 101px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_unchecked1{top: 104px; position: absolute; width: 16px; height: 16px; left: 14px;}
+
+.checklist_wrap .checklist_btn{position: absolute; width: 16px; height: 16px; top: 47px; left: 15px;}
+
+.checklist_wrap .checklist_btn_on{position: absolute; width: 16px; height: 16px; top: 0; left: 0;}
+
+.checklist_wrap .checklist_btn_on2{position: absolute; width: 16px; height: 16px; top: 75px; left: 14px;}
+
+.checklist_wrap .checklist_content2{position: absolute; width: 343px; height: 195px; top: 271px; left: 16px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+
+.checklist_wrap .checklist_content2_head{position: absolute; width: 343px; height: 30px; top: 0; left: 0; background-color: #9d9d9d; border-radius: 10px 10px 0px 0px;}
+
+.checklist_wrap .checklist_content2_head_text{top: 6px; left: 118px; font-family: "Segoe UI-Regular", sans-serif; color: #ffffff; font-size: 12px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content2_list5{position: absolute; top: 72px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content_list6{top: 118px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_content_list7{top: 159px;
+  left: 40px;
+  font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist_wrap .checklist_unchecked2{top: 75px; position: absolute; width: 16px; height: 16px; left: 14px;}
+
+.checklist_wrap .checklist_unchecked3{top: 133px; position: absolute; width: 16px; height: 16px; left: 14px;}
+
+.checklist_wrap .checklist_unchecked4{top: 162px; position: absolute; width: 16px; height: 16px; left: 14px;}
+
+.checklist_wrap .checklist_btn2{position: absolute; width: 8px; height: 6px; top: 0px; left: 0px;}
+
+.checklist_wrap .checklist_more_wrap{position: absolute; width: 343px; height: 131px; top: 481px; left: 16px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+
+.checklist_wrap .checklist_more{position: relative; width: 40px; height: 40px; top: 45px; left: 151px; background-color: #dddddd; border-radius: 20px; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+
+.checklist_wrap .checklist_more_img{position: absolute; width: 32px; height: 32px; top: 4px; left: 4px;}
+
+.checklist_wrap {
+  position: relative;
+}
+
+
+
+
+.checklist2_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+  
+.checklist2_wrap .checklist2_box{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+  
+.checklist2_wrap .checklist2_title{top: 14px; left: 50%; margin-left: -46px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 20px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.checklist2_wrap .checklist2_prev{width: 24px; height: 24px;}
+  
+.checklist2_wrap .checklist2_all_click{font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 16px; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.checklist2_wrap .checklist2_filter1{position: absolute; width: 66px; height: 29px; top: 70px; left: 16px; background-color: #ffffff; border-radius: 23px; border: 1px solid; border-color: #581db5; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.checklist2_wrap .text-wrapper-3{top: 3px; left: 19px; font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 14px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.checklist2_wrap .checklist2_filter2{position: absolute; width: 66px; height: 29px; top: 70px; left: 92px; background-color: #ffffff; border-radius: 23px; border: 1px solid; border-color: #dddddd; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.checklist2_wrap .checklist2_filter_text{position: absolute; top: 3px; left: 19px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #9d9d9d; font-size: 14px; text-align: center; letter-spacing: 0; line-height: normal;}
+  
+.checklist2_wrap .checklist2_filter3{position: absolute; width: 92px; height: 29px; top: 70px; left: 168px; background-color: #ffffff; border-radius: 23px; border: 1px solid; border-color: #dddddd; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.checklist2_wrap .checklist2_d{position: absolute; width: 343px; height: 51px; bottom: 20px; left: 50%; margin-left: -176px; background-color: #5e26b8; border-radius: 25.5px;}
+  
+.checklist2_wrap .checklist2_d_text{top: 14px; left: 142px; font-family: "Segoe UI-Semibold", sans-serif; color: #ffffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.checklist2_wrap .checklist2_content1_head{position: absolute; width: 309px; height: 137px; top: 119px; left: 50px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05); var(--);}
+  
+.checklist2_wrap .checklist2_content1_head_text{position: absolute; width: 309px; height: 30px; top: 0; left: 0; background-color: #581db5; border-radius: 10px 10px 0px 0px;}
+  
+.checklist2_wrap .checklist2_content1_head_text_in{width: 100px; top: 7px; left: 113px; font-family: "ABeeZee-Regular", sans-serif; color: #ffffff; font-size: 12px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+  
+.checklist2_wrap .checklist2_content_list1{width: 279px; top: 29px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; text-decoration: line-through; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content_list2{width: 279px; top: 58px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; text-decoration: line-through; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content_list3{width: 279px; top: 87px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content2_head{position: absolute; width: 309px; height: 195px; top: 271px; left: 50px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+
+.checklist2_wrap .checklist2_content2_head_text{position: absolute; width: 309px; height: 30px; top: 0; left: 0; background-color: #9d9d9d; border-radius: 10px 10px 0px 0px;}
+
+.checklist2_wrap .checklist2_content2_head_text_in{top: 6px; left: 99px; font-family: "Segoe UI-Regular", sans-serif; color: #ffffff; font-size: 12px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content_list4_wrap{position: absolute; width: 86px; height: 19px; top: 44px; left: 14px;}
+
+.checklist2_wrap .checklist2_content_list4{width: 279px; top: 0; left: 0; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; text-decoration: line-through; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content_list5{position: absolute; top: 72px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content_list6{top: 101px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content_list7{top: 117px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_content_list8{top: 159px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist2_wrap .checklist2_checkbox_non{position: absolute; width: 24px; height: 24px; top: 357px; left: 16px; background-color: var(--grayscalewhite); border: 1.5px solid; border-color: #9d9d9d;}
+
+.checklist2_wrap .checklist2_checkbox{position: absolute; width: 24px; height: 24px; top: 176px; left: 16px;}
+
+
+
+.checklist3_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+
+.checklist3_wrap .checklist3_box{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+
+.checklist3_wrap .checklist3_title{top: 14px; left: 50%; margin-left: -46px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 20px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist3_wrap .checklist3_prev{width: 24px; height: 24px; top: 16px; left: 16px;}
+
+.checklist3_wrap .checklist3_edit{font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 16px; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist3_wrap .checklist3_content{height: 500px; top: 70px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05); position: absolute; width: 343px; left: 16px;}
+
+.checklist3_wrap .checklist3_content_ct{top: 13px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist3_wrap .checklist3_content_ct_text{top: 13px; left: 87px; font-family: "Segoe UI-Regular", sans-serif; color: #dddddd; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist3_wrap .checklist3_content_input{top: 59px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #dddddd; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist3_wrap .checklist3_content_line{position: absolute; width: 324px; height: 1px; background-color: #eeeeee; top: 50px; left: 8px; object-fit: cover;}
+
+.checklist3_wrap .checklist3_add_btn{width: 343px; height: 51px; bottom: 20px; background-color: #9d9d9d; border-radius: 25.2px; position: absolute; left: 50%; margin-left: -176px;}
+
+.checklist3_wrap .checklist3_add_btn_text{top: 14px; left: 142px; font-family: "Segoe UI-Regular", sans-serif; color: #ffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist3_wrap .checklist3_content_ct_text {
+  top: 7px;
+  left: 87px;
+  position: absolute;
+  width: 230px;
+  border: none;
+  outline: none;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  background-color: transparent;
+}
+
+.checklist3_wrap .checklist3_content_input {
+  top: 59px;
+  left: 14px;
+  width: 315px;
+  height: 420px;
+  position: absolute;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "Segoe UI-Regular", sans-serif;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  background-color: transparent;
+}
+
+
+
+
+.checklist4_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+
+.checklist4_wrap .checklist4_box{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+
+.checklist4_wrap .checklist4_title{top: 14px; left: 50%; margin-left: -46px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 20px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_prev{width: 24px; height: 24px;}
+
+.checklist4_wrap .checklist4_edit{font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 16px; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_content{height: 500px; top: 70px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05); position: absolute; width: 343px; left: 16px;}
+
+.checklist4_wrap .checklist4_content_ct{top: 13px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_content_ct_text{top: 7px; left: 87px; font-family: "Segoe UI-Regular", sans-serif; color: #3333333; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_content_line{position: absolute; width: 324px; height: 1px; background-color: #eeeeee; top: 50px; left: 8px; object-fit: cover;}
+
+.checklist4_wrap .checklist4_content_list1{top: 59px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_content_list2{top: 88px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_content_list3{top: 117px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_content_list4{top: 134px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_content_list5{top: 176px; left: 40px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.checklist4_wrap .checklist4_unchecked{top: 62px; position: absolute; width: 16px; height: 16px; left: 14px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #9d9d9d;}
+
+.checklist4_wrap .checklist4_unchecked2{top: 91px; position: absolute; width: 16px; height: 16px; left: 14px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #9d9d9d;}
+
+.checklist4_wrap .checklist4_unchecked3{top: 120px; position: absolute; width: 16px; height: 16px; left: 14px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #9d9d9d;}
+
+.checklist4_wrap .checklist4_unchecked4{top: 149px; position: absolute; width: 16px; height: 16px; left: 14px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #9d9d9d;}
+
+.checklist4_wrap .checklist4_unchecked5{top: 178px; position: absolute; width: 16px; height: 16px; left: 14px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #9d9d9d;}
+
+.checklist4_wrap .checklist4_add_btn{width: 343px; height: 51px; bottom: 20px; background-color: #581db5; border-radius: 25.2px; position: absolute; left: 50%; margin-left: -176px;}
+
+.checklist4_wrap .checklist4_add_btn_text{top: 14px; left: 142px; font-family: "Segoe UI-Regular", sans-serif; color: #ffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+/* 체크리스트 end */
+
+
+/* md페이지 CSS */
+.md_wrap1{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; height: 100%; text-shadow: none;}
+
+.md_wrap_md{position:relative; top:-55px;}
+
+
+.md_wrap1 .md_box1{background-color: #ffffff; width: 375px; height: 1481px; position: relative;}
+
+.md_wrap1 .md_box_title{position: absolute; top: 14px; left: 50%; margin-left:-44px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_box_prev{width: 24px; height: 24px;}
+
+.md_wrap1 .md_search_bar{position: absolute; width: 303px; height: 50px; top: 5px; left: 16px; background-color: #ffffff; border-radius: 25px; border: 1px solid; border-color: #dddddd;}
+
+.md_wrap1 .md_search_bar_text{position: absolute; top: 13px; left: 19px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #dddddd; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_search_bar_btn{position: absolute; width: 30px; height: 30px; top: 8px; left: 262px;}
+
+.md_wrap1 .md_md1{position: absolute; width: 166px; height: 202px; top: 177px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_md1_img{height: 121px; top: 0; left: 0; position: absolute; width: 164px;}
+
+.md_wrap1 .md_name1{position: absolute; width: 154px; top: 125px; left: 5px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 12px; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_pay7{top: 172px; left: 98px; font-size: 16px; position: absolute; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; text-align: right; letter-spacing: 0; line-height: normal}
+
+.md_wrap1 .md_md1_discount{position: absolute; top: 174px; left: 67px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ff5959; font-size: 14px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_md2{position: absolute; width: 166px; height: 202px; top: 392px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_pay8{top: 172px; left: 93px; font-size: 16px; position: absolute; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_img{position: absolute; width: 164px; height: 120px; top: 0; left: 0;}
+
+.md_wrap1 .md_md3{position: absolute; width: 166px; height: 202px; top: 177px; left: 194px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_name2{position: absolute; width: 154px; top: 124px; left: 5px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 12px; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_pay6{position: absolute; top: 173px; left: 96px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 16px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_md4{position: absolute; width: 166px; height: 202px; top: 392px; left: 194px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_md5{position: absolute; width: 32px; height: 34px; top: 13px; left: 329px;}
+
+.md_wrap1 .md_cart{position: absolute; width: 30px; height: 28px; top: 2px; left: 0;}
+
+.md_wrap1 .md_cart_counter{position: absolute; width: 15px; height: 13px; top: -2px; left: 19px;}
+
+.md_wrap1 .md_cart_counter_circle{position: relative; width: 14px; height: 14px; background-color: #edb440; border-radius: 6.5px/6.69px;}
+
+.md_wrap1 .md_cart_counter_num{position: absolute; width: 5px; top: 1px; left: 4px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color:#ffffff; font-size: 10px; letter-spacing: 0; line-height: 10px; white-space: nowrap; }
+
+.md_wrap1 .md_tab1{left: 69px; color: #333333; position: absolute; top: 134px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; font-size: 16px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_tab2{left: 248px; color: #9d9d9d; position: absolute; top: 134px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; font-size: 16px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_tab_underbar{position: absolute; width: 164px; height: 2px; top: 166px; left: 16px; background-color: #581db5; border-radius: 1px;}
+
+.md_wrap1 .md_md6{position: absolute; width: 166px; height: 202px; top: 607px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_pay1{top: 174px; left: 109px; font-size: 14px; position: absolute; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_md7{position: absolute; width: 166px; height: 202px; top: 607px; left: 194px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05)}
+
+.md_wrap1 .md_md8{position: absolute; width: 166px; height: 202px; top: 822px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_pay5{top: 174px; left: 108px; font-size: 14px; position: absolute; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_md9{position: absolute; width: 166px; height: 202px; top: 1037px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_pay2{top: 174px; left: 101px; font-size: 14px; position: absolute; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_md10{position: absolute; width: 166px; height: 202px; top: 1252px; left: 15px; border-radius: 10px;  border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_name3{position: absolute; width: 154px; top: 125px; left: 6px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 12px; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_pay4{top: 175px; left: 101px; font-size: 14px; position: absolute; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .mask-group-2{height: 120px; top: 1px; left: 1px; position: absolute; width: 164px;}
+
+.md_wrap1 .md_md11{position: absolute; width: 166px; height: 202px; top: 822px; left: 194px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_pay3{top: 174px; left: 103px; font-size: 14px; position: absolute; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md_wrap1 .md_md12{position: absolute; width: 166px; height: 202px; top: 1037px; left: 194px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md_wrap1 .md_md13{position: absolute; width: 166px; height: 202px; top: 1252px; left: 194px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+
+.md2_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;  text-shadow: none;}
+
+.md2_wrap .md2_box{background-color: #ffffff; width: 375px; height: 1175px; position: relative;}
+
+.md2_wrap .md2_md3{position: absolute; width: 344px; height: 143px; top: 572px; left: 16px;}
+
+.md2_wrap .md2_md3_close{position: absolute; width: 343px; height: 30px; top: 113px; left: 1px; background-color: #9d9d9d; border-radius: 0px 0px 10px 10px; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md2_wrap .md2_md3_back{position: absolute; width: 343px; height: 102px; top: 12px; left: 1px; background-color: #ffffff; border-radius: 10px 10px 0px 0px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md2_wrap .md2_md3_img{top: 13px; left: 2px; position: absolute; width: 99px; height: 100px;}
+
+.md2_wrap .md2_md3_title{position: absolute; width: 213px; top: 41px; left: 116px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md3_close_btn{position: absolute; width: 20px; height: 20px; top: 118px; left: 161px;}
+
+.md2_wrap .md2_md4{position: absolute; width: 343px; height: 131px; top: 734px; left: 16px;}
+
+.md2_wrap .md2_md4_close{position: absolute; width: 343px; height: 30px; top: 101px; left: 0; background-color: #9d9d9d; border-radius: 0px 0px 10px 10px; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md2_wrap .md2_md4_back{position: absolute; width: 343px; height: 102px; top: 0; left: 0; background-color: #ffffff; border-radius: 10px 10px 0px 0px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md2_wrap .md2_md4_img{position: absolute; width: 100px; height: 100px; top: 1px; left: 0;}
+
+.md2_wrap .md2_md4_title{position: absolute; width: 213px; top: 18px; left: 115px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md4_close_btn{position: absolute; width: 20px; height: 20px; top: 106px; left: 161px;}
+
+.md2_wrap .md2_title{position: absolute; top: 14px; left: 50%; margin-left: -44px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_prev{width: 24px; height: 24px; top: 16px; left: 16px;}
+
+.md2_wrap .md2_search_bar{position: absolute; width: 303px; height: 50px; top: 70px; left: 16px; background-color: #ffffff; border-radius: 25px; border: 1px solid; border-color: #dddddd;}
+
+.md2_wrap .md2_search_bar_text{position: absolute; top: 13px; left: 19px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #dddddd; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_search_bar_btn{position: absolute; width: 30px; height: 30px; top: 8px; left: 262px;}
+
+.md2_wrap .md2_cart{position: absolute; width: 32px; height: 33px; top: 76px; left: 329px;}
+
+.md2_wrap .md2_cart_img{position: absolute; width: 30px; height: 28px; top: 4px; left: 0;}
+
+.md2_wrap .md2_cart_counter{position: absolute; width: 15px; height: 13px; top: 0px; left: 19px;}
+
+.md2_wrap .md2_cart_counter_circle{position: relative; width: 14px; height: 14px; background-color: #edb440; border-radius: 6.5px;}
+
+.md2_wrap .md2_cart_counter_num{position: absolute; top: 1px; left: 4px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ffffff; font-size: 10px; letter-spacing: 0; line-height: 10px; white-space: nowrap;}
+
+.md2_wrap .md2_tab1{top: 134px;  left: 69px; color: #9d9d9d; font-size: 16px; text-align: center; position: absolute;  font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_tab2{top: 134px; left: 248px; color: #333333; font-size: 16px; text-align: center; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_tab_underbar{position: absolute; width: 164px; height: 2px; top: 166px; left: 195px; background-color: #581db5; border-radius: 1px;}
+
+.md2_wrap .md2_md2{position: absolute; width: 343px; height: 131px; top: 439px; left: 16px; }
+
+.md2_wrap .md2_md2_title{position: absolute; width: 213px; top: 29px; left: 115px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md5{position: absolute; width: 343px; height: 131px; top: 879px; left: 17px;}
+
+.md2_wrap .md2_md5_img{top: 1px; left: 1px; position: absolute; width: 99px; height: 100px;}
+
+.md2_wrap .group-6{position: absolute; width: 20px; height: 17px; top: 61px; left: 161px;}
+
+.md2_wrap .md2_md4_close_btn{position: absolute; width: 20px; height: 20px; top: 106px; left: 160px;}
+
+.md2_wrap .md2_md6{position: absolute; width: 343px; height: 131px; top: 1029px; left: 17px;}
+
+.md2_wrap .md2_md1_close{position: absolute; width: 342px; height: 30px; top: 395px; left: 17px; border-radius: 10px 10px 0px 0px;}
+
+.md2_wrap .md2_md1_close_back{position: absolute; width: 342px; height: 30px; top: 0; left: 0; background-color: #581db5; border-radius: 10px 10px 0px 0px; transform: rotate(180deg);}
+
+.md2_wrap .md2_md1_close_btn{position: absolute; width: 20px; height: 20px; top: 5px; left: 160px;}
+
+.md2_wrap .md2_md1{position: absolute; width: 343px; height: 218px; top: 177px; left: 16px;}
+
+.md2_wrap .md2_md1_back{position: absolute; width: 342px; height: 217px; top: 1px; left: 1px; backgrou
+nd-color: #ffffff; border-radius: 10px 10px 0px 0px; border: 1px solid;border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md2_wrap .md2_md1_img_back{position: absolute; width: 342px; height: 102px; top: 0; left: 1px; background-color: #ffffff; border-radius: 10px 10px 0px 0px; border: 1px solid; border-color: #eeeeee;}
+
+.md2_wrap .md2_md1_close_list1{top: 105px; left: 9px; color: #9d9d9d; font-size: 14px; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md1_close_list2{top: 105px; left: 307px; color: #333333; font-size: 14px; text-align: right; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md1_close_list3{top: 134px; left: 275px; color: #ff5959; font-size: 14px; text-align: right; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md1_close_list4{top: 163px; left: 267px; color: #9d9d9d; font-size: 14px; text-align: right; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400;letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md1_close_list5{top: 192px; left: 275px; color: #9d9d9d; font-size: 14px; text-align: right; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400;letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md1_close_list6{top: 134px; left: 10px; color: #9d9d9d; font-size: 14px; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md1_close_list7{top: 163px; left: 10px; color: #9d9d9d; font-size: 14px; position: absolute; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md2_wrap .md2_md1_close_list8{top: 192px; left: 10px; color: #9d9d9d; font-size: 14px; position: absolute; font-family: "Segoe UI-Regular", sans-serif;  font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+
+
+.md3_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+
+.md3_wrap .md3_box{background-color: #ffffff; width: 375px; height: 4439px; position: relative;}
+
+.md3_wrap .md3_info{position: absolute; width: 375px; height: 3784px; top: 506px; left: 0; object-fit: cover;}
+
+.md3_wrap .more_wrap{position: absolute; width: 375px; height: 268px; top: 62px; left: 0; background-image: url(../img/md/md3_main.png); background-size: 100% 100%;}
+
+.md3_wrap .more_circle1{left: 169px; background-color: #581db5; position: absolute; width: 6px; height: 6px; top: 252px; border-radius: 3px;}
+
+.md3_wrap .more_circle2{left: 185px; background-color: #dddddd; position: absolute; width: 6px; height: 6px; top: 252px; border-radius: 3px;}
+
+.md3_wrap .more_circle3{left: 201px; background-color: #dddddd; position: absolute; width: 6px; height: 6px; top: 252px; border-radius: 3px;}
+
+.md3_wrap .md3_title{top: 17px; left: 50%; margin-left: -18px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 20px; position: absolute; font-weight: 400; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_prev{width: 24px; height: 24px;}
+
+.md3_wrap .md3_sub1{left: 16px; position: absolute; width: 50px; height: 50px; top: 404px; object-fit: cover;}
+
+.md3_wrap .md3_sub2{left: 73px; position: absolute; width: 50px; height: 50px; top: 404px; object-fit: cover;}
+
+.md3_wrap .md3_sub3{left: 130px; position: absolute; width: 50px; height: 50px; top: 404px; object-fit: cover;}
+
+.md3_wrap .md3_name{position: absolute; width: 343px; top: 339px; left: 16px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 20px; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_cart{width: 32px; height: 32px;}
+
+.md3_wrap .md3_cart_img{width: 30px; height: 27px;}
+
+.md3_wrap .md3_cart_counter{position: absolute; width: 15px; height: 13px; top: 2px; left: 32px;}
+
+.md3_wrap .md3_cart_counter_circle{position: relative; width: 14px; height: 14px; background-color: #edb440; border-radius: 6.5px / 6.4px;}
+
+.md3_wrap .md3_cart_counter_num{position: absolute; width: 5px; top: 1px; left: 4px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ffffff; font-size: 10px; letter-spacing: 0; line-height: 10px; white-space: nowrap }
+
+.md3_wrap .md3_pay{position: absolute; top: 463px; left: 276px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 24px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_discount{position: absolute; top: 466px; left: 230px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ff5959; font-size: 20px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_bottom{height: 149px; bottom: 0px; left: 0; background-color: #ffffff; border-radius: 11px 11px 0px 0px; box-shadow: 0px -4px 20px rgba(0,0,0,0.1);}
+
+.md3_wrap .md3_bottom_btn{position: absolute; width: 343px; height: 51px; top: 78px; left: 16px; background-color: #ffffff; border-radius: 25.5px; border: 2px solid; border-color: #5e26b8;}
+
+.md3_wrap .md3_bottom_btn_text{top: 12px; left: 123px; font-family: "Segoe UI-Semibold", sans-serif; color: #5e26b8ee; font-size: 16px; position: absolute; font-weight: 400; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_bottom_select{position: absolute; top: 10px; left: 128px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 14px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md_footer_wrap{margin: 0 auto; width: 375px; height: 150px; position: relative;}
+
+.md3_wrap .md3_bottom_name{top: 10px; left: 26px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_bottom_count{top: 43px; left: 26px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_bottom_count_btn{position: absolute; width: 113px; height: 30px; top: 39px; left: 238px;}
+
+.md3_wrap .md3_bottom_count_num{top: 5px; left: 45px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; position: absolute; font-weight: 400; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md3_wrap .md3_bottom_count_minus{position: absolute; width: 30px; height: 30px; top: 0; left: 0; background-color: var(--grayscalewhite); border-radius: 15px; border: 1px solid; border-color: #eeeeee;}
+
+.md3_wrap .minus{position: absolute; width: 16px; height: 2px; top: 13px; left: 6px; background-color: #666666;}
+
+.md3_wrap .md3_bottom_count_plus{position: absolute; width: 30px; height: 30px; top: 0; left: 81px; background-color: var(--grayscalewhite); border-radius: 15px; border: 1px solid; border-color: #eeeeee;}
+
+.md3_wrap .plus{position: absolute; width: 2px; height: 16px; top: 6px; left: 13px; background-color: #666666;}
+
+
+
+.md4_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; text-shadow: none;}
+  
+.md4_wrap .md4_box{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+
+.md4_wrap .md4_bottom_pay{height: 91px; bottom: 0px; left: 0; border-radius: 11px 11px 0px 0px; box-shadow: 0px -4px 20px rgba(0,0,0,0.1);background-color: #ffffff;}
+
+.md4_wrap .md4_bottom_pay_btn{position: absolute; width: 343px; height: 51px; top: 20px; left: 16px; background-color: #5e26b8; border-radius: 25.5px;}
+
+.md4_wrap .md4_bottom_pay_btn_text{top: 34px; left: 158px; font-family: "Segoe UI-Semibold", sans-serif; color: #ffffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md4_footer{width: 375px; height: 91px; margin: 0 auto; position: relative;}
+
+.md4_wrap .md4_title{position: absolute; top: 14px; left: 50%; margin-left: -37px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_prev{width: 24px; height: 24px;}
+
+.md4_wrap .md4_all_count{position: absolute; top: 69px; left: 16px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #9d9d9d; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_option{width: 345px; height: 153px; top: 100px; left: 15px; border-radius: 10px; border: 1px solid; border-color: #eeeeee; position: absolute; background-color: #ffffff; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md4_wrap .md4_option_num{position: absolute; width: 197px; top: 73px; left: 105px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: transparent; font-size: 12px; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_option_menu{color: #9d9d9d;}
+
+.md4_wrap .md4_option_menu_text{color: #333333;}
+
+.md4_wrap .md4_option_select{width: 197px; top: 52px; left: 105px; font-family: "Segoe UI-Regular", sans-serif; color: transparent; font-size: 12px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_img{position: absolute; width: 85px; height: 85px; top: 10px; left: 10px;}
+
+.md4_wrap .md4_name{position: absolute; width: 199px; top: 9px; left: 105px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_option_change{width: 55px; height: 26px; top: 116px; left: 11px; border-radius: 5px; border: 1px solid; border-color: #d9d9d9; position: absolute; background-color: #ffffff;}
+
+.md4_wrap .md4_option_change_text{top: 4px; left: 5px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 11px; text-align: right; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_pay{position: absolute; top: 116px; left: 250px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_option_discount{position: absolute; top: 118px; left: 210px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ff5959; font-size: 16px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_line{position: absolute; width: 324px; height: 1px; top: 106px; left: 10px; background-color: #eeeeee; }
+
+.md4_wrap .md4_option2{position: absolute; width: 345px; height: 153px; top: 266px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md4_wrap .md4_pay2{position: absolute; top: 116px; left: 250px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md4_wrap .md4_all_select{font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 16px; text-align: right; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+
+
+.md5_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; text-shadow: none;}
+
+.md5_wrap .md5_box{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+
+.md5_wrap .md5_bottom_del{bottom: 0px; left: 0; height: 91px; border-radius: 11px 11px 0px 0px; box-shadow: 0px -4px 20px rgba(0,0,0,0.1); background-color: #ffffff;}
+
+.md5_wrap .md5_footer_wrap{margin: 0 auto; width: 375px; height: 150px; position: relative;}
+
+.md4_wrap .md4_bottom_pay{height: 91px; bottom: 0px; left: 0; border-radius: 11px 11px 0px 0px; box-shadow: 0px -4px 20px rgba(0,0,0,0.1);background-color: #ffffff;}
+
+.md5_wrap .md5_bottom_del_back{position: absolute; width: 343px; height: 51px; top: 20px; left: 16px; background-color: #5e26b8; border-radius: 25.5px;}
+
+.md5_wrap .md5_bottom_del_text{top: 34px; left: 158px; font-family: "Segoe UI-Semibold", sans-serif; color: #ffffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_title{position: absolute; top: 14px; left: 50%; margin-left: -37px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_prev{width: 24px; height: 24px;}
+
+.md5_wrap .md5_all_count{position: absolute; top: 69px; left: 16px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #9d9d9d; font-size: 16px; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_option{width: 345px; height: 153px; top: 100px; left: 15px; border-radius: 10px; border: 1px solid; border-color: #eeeeee; position: absolute; background-color: #ffffff; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);}
+
+.md5_wrap .md5_option_num{position: absolute; width: 197px; top: 76px; left: 129px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: transparent; font-size: 12px; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_option_menu {color: #9d9d9d;}
+
+.md5_wrap .md5_option_menu_text{color: #333333;}
+
+.md5_wrap .md5_option_select{width: 197px; top: 55px; left: 129px; font-family: "Segoe UI-Regular", sans-serif; color: transparent; font-size: 12px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_img{position: absolute; width: 85px; height: 85px; top: 10px; left: 34px;}
+
+.md5_wrap .md5_checkbox{position: absolute; width: 20px; height: 20px; top: 15px; left: 7px;}
+
+.md5_wrap .md5_name{position: absolute; width: 199px; top: 12px; left: 129px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_option_change {
+width: 55px; height: 26px; top: 112px; left: 35px; border-radius: 5px; border: 1px solid; border-color:  #d9d9d9; position: absolute; background-color: #ffffff;}
+
+.md5_wrap .md5_option_change_text{top: 3px; left: 4px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 12px; text-align: right; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_pay{position: absolute; top: 111px; left: 258px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_option_discount{position: absolute; top: 116px; left: 224px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ff5959; font-size: 16px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_line{position: absolute; width: 300px; height: 1px; top: 106px; left: 34px; background-color: #eeeeee;}
+
+.md5_wrap .md5_option2{position: absolute; width: 345px; height: 153px; top: 266px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);}
+
+.md5_wrap .md5_pay2{position: absolute; top: 111px; left: 255px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md5_wrap .md5_edit_done{font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 16px; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+
+
+.md6_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; text-shadow: none;}
+
+.md6_wrap .md6_box{background-color: #ffffff; width: 375px; height: 769px; position: relative;}
+
+.md6_wrap .md6_pay_wrap{position: absolute; width: 345px; height: 558px; top: 101px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md6_wrap .md6_pay1{position: absolute; width: 97px; height: 70px; top: 256px; left: 12px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #5e26b8;}
+
+.md6_wrap .md6_pay_text{position: absolute; top: 45px; left: 20px; font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: var(--grayscalegray-500); font-size: 12px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_img{position: absolute; width: 77px; height: 30px; top: 9px; left: 9px;}
+
+.md6_wrap .md6_pay2{position: absolute; width: 97px; height: 70px; top: 256px; left: 124px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #d9d9d9;}
+
+.md6_wrap .md6_pay3{position: absolute; width: 97px; height: 70px; top: 256px; left: 236px; background-color: #ffffff; border-radius: 8px; border: 1px solid; border-color: #d9d9d9;}
+
+.md6_wrap .md6_pay_text2{top: 45px; left: 25px; font-family: "Segoe UI-Regular", sans-serif; color: var(--grayscalegray-500); font-size: 12px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_img2{position: absolute; width: 60px; height: 37px; top: 6px; left: 18px; object-fit: cover;}
+
+.md6_wrap .md6_pay_option1{position: absolute; width: 226px; height: 21px; top: 73px; left: 106px;}
+
+.md6_wrap .md6_option_num{width: 226px; top: 0; left: 0; font-family: "Segoe UI-Regular", sans-serif; color: transparent; font-size: 12px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_option_menu{color: #9d9d9d;}
+
+.md6_wrap .md6_payment{position: absolute; top: 0; left: 170px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 16px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_discount{position: absolute; top: 2px; left: 141px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ff5959; font-size: 14px; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_option2 { position: absolute; width: 226px; height: 21px; top: 178px; left: 106px;}
+
+.md6_wrap .md6_payment2{top: 0; left: 165px; font-family: "Segoe UI-Semibold", sans-serif; color: #333333; font-size: 16px; position: absolute; font-weight: 400; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_option_menu_text1{width: 226px; top: 51px; left: 105px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 12px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_option_menu_text2{width: 226px; top: 156px; left: 105px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 12px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_img{position: absolute; width: 85px; height: 85px; top: 9px; left: 10px;}
+
+.md6_wrap .md6_img2{position: absolute; width: 85px; height: 85px; top: 114px; left: 10px;}
+
+.md6_wrap .md6_name1{position: absolute; width: 228px; top: 8px; left: 105px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_name2{position: absolute; width: 228px; top: 113px; left: 105px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_line1{top: 220px; position: absolute; width: 344px; height: 1px; left: 0; background-color: #eeeeee;}
+
+.md6_wrap .md6_line2{top: 346px; position: absolute; width: 344px; height: 1px; left: 0; background-color: #eeeeee;}
+
+.md6_wrap .md6_pay_how{top: 229px; left: 10px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_howmuch{top: 365px; left: 10px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_all_money{top: 365px; left: 279px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; text-align: right; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_delivery{top: 394px; left: 10px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_point{top: 423px; left: 10px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_delivery_money{top: 394px; left: 286px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 14px; text-align: right; position: absolute; font-weight: 400; letter-spacing: 0;line-height: normal;}
+
+.md6_wrap .md6_pay_point_money{top: 423px; left: 291px; font-family: "Segoe UI-Regular", sans-serif; color: #581db5; font-size: 14px; position: absolute; font-weight: 400; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_minus_money{top: 483px; left: 281px; font-family: "Segoe UI-Regular", sans-serif; color: #ff5959; font-size: 14px; text-align: right; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_discount_money{top: 455px; left: 10px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_all{top: 522px; left: 10px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 14px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_coupon{position: absolute; width: 111px; height: 26px; top: 454px; left: 223px; background-color: #ffffff; border-radius: 2px; border: 1px solid; border-color: #d9d9d9;}
+
+.md6_wrap .md6_pay_coupon_text{top: 3px; left: 5px; font-family: "Segoe UI-Regular", sans-serif; color: #5e26b8; font-size: 12px; text-align: right; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_pay_all_about_money{top: 518px; left: 260px; font-family: "Segoe UI-Semibold", sans-serif; color: #333333; font-size: 20px; position: absolute; font-weight: 400; text-align: right; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_line3{position: absolute; width: 324px; height: 1px; top: 514px; left: 10px; background-color: #eeeeee;}
+
+.md6_wrap .md6_title{font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal; position: absolute; top: 14px; left: 50%; margin-left: -37px;}
+
+.md6_wrap .md6_all_count{top: 69px; left: 16px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 16px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md6_wrap .md6_prev{width: 24px; height: 25px;}
+
+.md6_wrap .md6_bottom_pay{height: 91px; bottom: 0px; left: 0; background-color: #ffffff; border-radius: 11px 11px 0px 0px; box-shadow: 0px -4px 20px rgba(0,0,0,0.1);}
+
+.md6_footer_wrap{margin: 0 auto; width: 375px; height: 150px; position: relative;}
+
+.md6_wrap .md6_bottom_pay_back{position: absolute; width: 343px; height: 51px; top: 20px; left: 16px; background-color: #5e26b8; border-radius: 25.5px;}
+
+.md6_wrap .md6_bottom_pay_text{top: 34px; left: 116px; font-family: "Segoe UI-Semibold", sans-serif; color: #ffffffee; font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0;line-height: normal;}
+
+
+
+.md7_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%; text-shadow: none;}
+
+.md7_wrap .md7_box{background-color: #ffffff; width: 375px; height: 667px; position: relative;}
+
+.md7_wrap .md7_mainbtn{position: absolute; width: 343px; height: 51px; bottom: 20px; left: 50%; margin-left: -172px; background-color: #5e26b8; border-radius: 25.5px;}
+
+.md7_wrap .md7_mainbtn_text{top: 14px; left: 127px;font-family: "Segoe UI-Semibold", sans-serif; color: #ffffffee; font-size: 16px;text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md7_wrap .md7_coment{top: 454px; left: 57px; font-family: "Segoe UI-Regular", sans-serif; color: transparent;font-size: 16px; text-align: center; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md7_wrap .md7_text{color: #333333;}
+
+.md7_wrap .md7_number{color: #5e26b8; font-weight: bold;}
+
+.md7_wrap .md7_title{font-family: "Segoe UI-Regular", sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal; position: absolute; top: 14px; left: 50%; margin-left: -37px;}
+
+.md7_wrap .md7_prev{width: 24px; height: 24px;}
+
+.md7_wrap .md7_pickup_circle{position: absolute; width: 200px; height: 200px; top: 215px; left: 87px; background-color: #edb440; border-radius: 100px;}
+
+.md7_wrap .md7_pickup_num{position: absolute;top: -2px; left: 34px; font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #ffffffee; font-size: 128px; text-align: center; letter-spacing: 0; line-height: normal;}
+
+.md7_wrap .md7_pay{position: absolute; width: 345px; height: 107px; top: 69px; left: 15px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow: 0px 2px 10px rgba(0,0,0,0.05);}
+
+.md7_wrap .md7_pay_text{width: 226px; top: 65px; left: 105px; font-family: "Segoe UI-Regular", sans-serif; color: #9d9d9d; font-size: 12px; position: absolute; font-weight: 400; letter-spacing: 0; line-height: normal;}
+
+.md7_wrap .md7_pay_img{position: absolute; width: 85px; height: 85px; top: 10px; left: 10px;}
+
+.md7_wrap .md7_pay_title{position: absolute; width: 228px; top: 22px; left: 105px;font-family: "Segoe UI-Semibold", sans-serif; font-weight: 400; color: #333333; font-size: 14px; letter-spacing: 0; line-height: normal;}
+
+.ui-page .ui-footer-fixed.ui-fixed-hidden{display: none;}
+.ui-mobile-viewport ui-overlay-a{background: #ffffff;}
+body.ui-mobile-viewport, div.ui-mobile-viewport {background: #ffffff;}
+
+/* md페이지 CSS end */
+
+
+
+
+
+
+
+
+/* 알림 */
+.arlam_wrap{background-color: #ffffff; display: flex; flex-direction: row; justify-content: center; width: 100%;}
+  
+.arlam_wrap .arlam_box{background-color: #ffffff; overflow: hidden; width: 375px; height: 721px; position: relative;}
+  
+.arlam_wrap .arlam_title{position: absolute; top: 14px; left: 50%; margin-left: -18px; font-family: "Segoe UI-Regular", Sans-serif; font-weight: 400; color: #333333; font-size: 20px; text-align: center; letter-spacing: 0; line-height: normal;}
+  
+.arlam_wrap .arlam_perv{width: 24px; height: 24px; top: 16px; left: 16px;}
+  
+.arlam_wrap .arlam_line{height: 5px; top: 296px; position: absolute; width: 375px; left: 0; background-color: #eeeeee;}
+
+.arlam_wrap .arlam_today{top: 69px; left: 16px; font-family: "Segoe UI-Regular", Sans-serif; color: #333333; font-size: 16px; line-height: normal; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_yesterday{top: 312px; left: 16px; font-family: "Segoe UI-Regular", Sans-serif; color: #333333; font-size: 16px; line-height: normal; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle1{position: absolute; width: 50px; height: 50px; top: 113px; left: 16px; background-color: #edb440; border-radius: 25px;}
+  
+.arlam_wrap .arlam_circle_text{position: absolute; top: 6px; left: 18px; font-family: "Segoe UI-Semibold", Sans-serif; font-weight: 400; color: #ffffff; font-size: 24px; letter-spacing: 0; line-height: normal;}
+  
+.arlam_wrap .arlam_circle1_new{position: absolute; width: 12px; height: 12px; top: 2px; left: 0; background-color: #ff0000; border-radius: 6px;}
+  
+.arlam_wrap .arlam_circle3{position: absolute; width: 50px; height: 50px; top: 356px; left: 16px; background-color: #9d9d9d; border-radius: 25px;}
+  
+.arlam_wrap .arlam_circle6{position: absolute; width: 50px; height: 50px; top: 631px; left: 16px; background-color: #9d9d9d; border-radius: 25px;}
+  
+.arlam_wrap .arlam_circle2{position: absolute; width: 50px; height: 50px; top: 208px; left: 16px; background-color: #581db5; border-radius: 25px;}
+  
+.arlam_wrap .arlam_circle4{position: absolute; width: 50px; height: 50px; top: 451px; left: 16px; background-color: #9d9d9d; border-radius: 25px;}
+  
+.arlam_wrap .arlam_circle5{position: absolute; width: 50px; height: 50px; top: 541px; left: 16px; background-color: #9d9d9d; border-radius: 25px;}
+  
+.arlam_wrap .arlam_circle3_container{position: absolute; width: 283px; height: 50px; top: 356px; left: 76px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.arlam_wrap .arlam_circle_container_text{top: 2px; left: 14px; font-family: "Segoe UI-Regular", sans-serif; color: #333333; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle1_container{position: absolute; width: 283px; height: 50px; top: 113px; left: 76px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #edb440; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.arlam_wrap .arlam_circle6_container{position: absolute; width: 283px; height: 50px; top: 631px; left: 76px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.arlam_wrap .arlam_circle2_container{position: absolute; width: 283px; height: 50px; top: 208px; left: 76px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #581db5; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.arlam_wrap .arlam_circle4_container{position: absolute; width: 283px; height: 50px; top: 451px; left: 76px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.arlam_wrap .arlam_circle5_container{position: absolute; width: 283px; height: 50px; top: 541px; left: 76px; background-color: #ffffff; border-radius: 10px; border: 1px solid; border-color: #eeeeee; box-shadow:  0px 2px 10px rgba(0,0,0,0.05);}
+  
+.arlam_wrap .arlam_circle3_time{top: 410px; left: 86px; font-family: "ABeeZee-Regular", Sans-serif; color: #9d9d9d; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle1_time{top: 167px; left: 86px; font-family: "Segoe UI-Regular", Sans-serif; color: #9d9d9d; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle6_time{top: 685px; left: 86px; font-family: "ABeeZee-Regular", Sans-serif; color: #9d9d9d; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle1_no{top: 167px; left: 147px; font-family: "Segoe UI-Regular", Sans-serif; color: #9d9d9d; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle2_time{top: 262px; left: 86px; font-family: "Segoe UI-Regular", Sans-serif; color: #9d9d9d; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle4_time{top: 505px; left: 86px; font-family: "Segoe UI-Regular", Sans-serif; color: #9d9d9d; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+  
+.arlam_wrap .arlam_circle5_time{top: 595px; left: 86px; font-family: "Segoe UI-Regular", Sans-serif; color: #9d9d9d; font-size: 12px; line-height: 20px; white-space: nowrap; position: absolute; font-weight: 400; letter-spacing: 0;}
+/* 알림 end */
+
+
+
+
+
+
+
+
+
+
+
+
